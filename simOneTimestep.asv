@@ -34,7 +34,18 @@ function[V2XDataTimestep]...
 %   objectCellsVehicles:cell containing outline of all vehicles
 %
 % Copyright (c) 2014-2015, Mate Boban
-
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('........................ORIGINAL..............................\n');
+RSUs
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
 ticForTimestep=tic;
 % Speed of light (m/s) constant
 c = 299792458;
@@ -55,6 +66,7 @@ if isempty(commPairArray) && isempty(commPairArrayV2I)
             tic
             communicationPairs = rangesearch...
                 (vehicleMidpoints,vehicleMidpoints,commRange);
+            % Get a given number of random communication pairs
             communicationPairs = commPairs.getRandCommPairs...
                 (communicationPairs,numCommPairs);
             if verbose
@@ -69,6 +81,10 @@ if isempty(commPairArray) && isempty(commPairArrayV2I)
             tic
             communicationPairsV2I = rangesearch...
                 (RSUs(:,[2 3]),vehicleMidpoints,commRange);
+            % Get a given number of random communication pairs
+            communicationPairsV2I = commPairs.getRandCommPairs...
+                (communicationPairsV2I,numCommPairsV2I,'V2I');
+            communicationPairsV2I = fliplr(communicationPairsV2I);
             if verbose
                 fprintf(['Matlab rangesearch command takes %f seconds '...
                     'to map the V2I communication pairs.\n'],toc);
@@ -81,17 +97,7 @@ if isempty(commPairArray) && isempty(commPairArrayV2I)
         fprintf('function `rangesearch` is not available');
         return        
     end
-    % Get a given number of random communication pairs
-    if numCommPairs>0
-        
-    end
-    if ~isempty(RSUs) && numCommPairsV2I>0
-        communicationPairsV2I = commPairs.getRandCommPairs...
-            (communicationPairsV2I,numCommPairsV2I,'V2I');
-        if exist('rangesearch') == 5 || exist('rangesearch') == 2
-            communicationPairsV2I = fliplr(communicationPairsV2I);
-        end
-    end
+    
     % NB: Depending on maximum communication ranges, there might be no
     % communication pairs for the current timestep
     if isempty(communicationPairs)
@@ -432,4 +438,26 @@ if strcmpi(V2XNames{ii},'v2i')
     V2XDataTimestep.(V2XNames{ii}).largeScalePwrI2V = ...
         largeScalePwr - txPower + RSUPower;
 end
+end
+
+%% Directed Diffusion
+%unique(communicationPairs(:, 1))
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('...............FILTRO.......................\n');
+sinks = [];
+for gg = 1:size(communicationPairsV2I, 1)
+    for hh = 1:size(RSUs, 1)
+        if (communicationPairsV2I(gg, 1) == RSUs(hh, 1))
+            sinks(size(sinks) + 1) = RSUs(hh, :);
+        end
+    end
+end
+sinks
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+fprintf('..................................................................\n');
+
 end
