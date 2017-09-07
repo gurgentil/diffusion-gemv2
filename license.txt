@@ -1,0 +1,20 @@
+Copyright (c) 2014-2015, Mate Boban
+All rights reserved.
+
+GEMV^2 License
+
+GEMV^2 is free of charge and openly distributed for commercial and non-commercial purpose (including, but not limited to, using, copying, distributing, and modifying), provided that the following conditions are met:
+
+1. GEMV^2 must be referenced when used in a published work (in English: give me some credit for saving your valuable time!).
+
+2. GEMV^2 and forks/versions of GEMV^2, as a whole or in part, may not be redistributed as a part of a commercial product unless agreed upon with the copyright owner (in English: GEMV^2 is free for all purposes but one: including GEMV^2 or parts of it in commercial products; if this is your intended use, you need to contact me for an appropriate license).
+
+3. GEMV^2 is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DAMAGES (in English: if your battery-powered battery charger stops charging due to a bug in GEMV^2, your loss!).
+
+4. GEMV^2, forks/versions of GEMV^2, and any significant portion of GEMV^2 must include and follow this license in any distribution unless otherwise agreed upon with the copyright owner.
+
+A version of the following is a suitable general reference:
+Mate Boban, Joao Barros, and Ozan K. Tonguz: "Geometry-Based Vehicle-to-Vehicle Channel Modeling for Large-Scale Simulation," IEEE Transactions on Vehicular Technology, 2014, doi:10.1109/TVT.2014.2317803
+
+If you primarily use "vehicles as obstacles" model implemented as part of GEMV^2, a reference to the associated paper might be in place:
+Mate Boban, Tiago T. V. Vinhoza, Michel Ferreira, Joao Barros, and Ozan K. Tonguz, "Impact of Vehicles as Obstacles in Vehicular Ad Hoc Networks," IEEE Journal on Selected Areas in Communications, vol. 29, no. 1, pp. 15–28, January 2011, doi:10.1109/JSAC.2011.110103
