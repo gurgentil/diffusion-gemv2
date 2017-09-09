@@ -317,4 +317,4 @@ GEVisualize = 1;
     
 %% Output-related parameters
 % Verbose textual output in console (verbose = 1)
-verbose = 1;
+verbose = 0;

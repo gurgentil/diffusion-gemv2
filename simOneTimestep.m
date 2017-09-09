@@ -58,26 +58,18 @@ if isempty(commPairArray) && isempty(commPairArrayV2I)
             % Get a given number of random communication pairs
             communicationPairs = commPairs.getRandCommPairs...
                 (communicationPairs,numCommPairs);
-            if verbose
-                fprintf(['Matlab rangesearch command takes %f seconds '...
-                    'to map the V2V communication pairs.\n'],toc);
-            end
         else
             communicationPairs = [];
         end
         % Find V2I (RSU-vehicle) comm. pairs
         if ~isempty(RSUs) && numCommPairsV2I>0
             tic
-            communicationPairsV2I = rangesearch...
+            communicationPairsV2IRS = rangesearch...
                 (RSUs(:,[2 3]),vehicleMidpoints,commRange);
             % Get a given number of random communication pairs
             communicationPairsV2I = commPairs.getRandCommPairs...
-                (communicationPairsV2I,numCommPairsV2I,'V2I');
+                (communicationPairsV2IRS,numCommPairsV2I,'V2I');
             communicationPairsV2I = fliplr(communicationPairsV2I);
-            if verbose
-                fprintf(['Matlab rangesearch command takes %f seconds '...
-                    'to map the V2I communication pairs.\n'],toc);
-            end
         else
             communicationPairsV2I = [];
         end
@@ -428,5 +420,18 @@ if strcmpi(V2XNames{ii},'v2i')
         largeScalePwr - txPower + RSUPower;
 end
 end
+
+
+
+
+%% DIRECTED DIFFUSION
+
+% Send packets from RSU to vehicle
+
+
+
+
+
+
 
 end
