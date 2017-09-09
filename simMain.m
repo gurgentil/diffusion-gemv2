@@ -66,8 +66,7 @@ if ~isempty(RSUFile)
     RSUsLatLon = load(RSUFile);
     RSUs = RSUsLatLon;
     % Convert Lat/Lon to UTM
-    [xxRSU,yyRSU,~] = ...
-        externalCode.deg2utm.deg2utm(RSUsLatLon(:,2),RSUsLatLon(:,3));
+    [xxRSU,yyRSU,~] = externalCode.deg2utm.deg2utm(RSUsLatLon(:,2),RSUsLatLon(:,3));
     RSUs(:,2) = yyRSU;
     RSUs(:,3) = xxRSU;
 else
