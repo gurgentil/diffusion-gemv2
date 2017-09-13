@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/13/17 11:30:39 by SUMO Version 0.30.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="map.net.xml"/>
+        <route-files value="map.rou.xml"/>
+        <additional-files value="map.poly.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="SUMOMobility.xml"/>
+        <fcd-output.geo value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+</configuration>
+-->
+
+<fcd-export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/fcd_file.xsd">
+    <timestep time="0.00">
+        <vehicle id="0" x="-46.658186" y="-23.566324" angle="40.412045" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="231355593#0_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="1.00">
+        <vehicle id="0" x="-46.658177" y="-23.566314" angle="40.412045" type="DEFAULT_VEHTYPE" speed="1.441689" pos="6.541689" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653953" y="-23.561580" angle="17.350778" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="504331803#1_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="2.00">
+        <vehicle id="0" x="-46.658151" y="-23.566287" angle="40.412045" type="DEFAULT_VEHTYPE" speed="3.982565" pos="10.524254" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653948" y="-23.561565" angle="17.350778" type="DEFAULT_VEHTYPE" speed="1.673759" pos="6.773759" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655759" y="-23.568497" angle="41.235499" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="359790121#1_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="3.00">
+        <vehicle id="0" x="-46.658114" y="-23.566248" angle="40.412045" type="DEFAULT_VEHTYPE" speed="5.815624" pos="16.339878" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653937" y="-23.561534" angle="17.350778" type="DEFAULT_VEHTYPE" speed="3.634880" pos="10.408638" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655742" y="-23.568480" angle="41.235499" type="DEFAULT_VEHTYPE" speed="2.543305" pos="7.643305" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655954" y="-23.563627" angle="131.459111" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="426696424_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="4.00">
+        <vehicle id="0" x="-46.658064" y="-23.566195" angle="40.412045" type="DEFAULT_VEHTYPE" speed="7.706766" pos="24.046645" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653913" y="-23.561486" angle="24.313485" type="DEFAULT_VEHTYPE" speed="5.913129" pos="16.321768" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655715" y="-23.568452" angle="41.235499" type="DEFAULT_VEHTYPE" speed="4.174649" pos="11.817954" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655942" y="-23.563637" angle="131.459111" type="DEFAULT_VEHTYPE" speed="1.633765" pos="6.733765" lane="426696424_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="5.00">
+        <vehicle id="0" x="-46.658002" y="-23.566129" angle="40.412045" type="DEFAULT_VEHTYPE" speed="9.700752" pos="33.747397" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653882" y="-23.561423" angle="24.313485" type="DEFAULT_VEHTYPE" speed="7.638224" pos="23.959992" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655675" y="-23.568410" angle="41.235499" type="DEFAULT_VEHTYPE" speed="6.186904" pos="18.004858" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655890" y="-23.563641" angle="131.459412" type="DEFAULT_VEHTYPE" speed="4.225920" pos="10.959685" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655430" y="-23.562190" angle="311.804250" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="423987651#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="6.00">
+        <vehicle id="0" x="-46.657930" y="-23.566053" angle="40.412045" type="DEFAULT_VEHTYPE" speed="11.162493" pos="44.909890" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653840" y="-23.561341" angle="24.313485" type="DEFAULT_VEHTYPE" speed="10.159890" pos="34.119882" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655620" y="-23.568354" angle="41.253268" type="DEFAULT_VEHTYPE" speed="8.368351" pos="26.373209" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655843" y="-23.563680" angle="131.459412" type="DEFAULT_VEHTYPE" speed="6.482050" pos="17.441735" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655443" y="-23.562179" angle="311.804250" type="DEFAULT_VEHTYPE" speed="1.863842" pos="6.963842" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658871" y="-23.567041" angle="40.795385" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="231355585#5_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="7.00">
+        <vehicle id="0" x="-46.657847" y="-23.565965" angle="40.412045" type="DEFAULT_VEHTYPE" speed="12.938973" pos="57.848863" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653789" y="-23.561240" angle="24.313485" type="DEFAULT_VEHTYPE" speed="12.360707" pos="46.480588" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655556" y="-23.568288" angle="41.260588" type="DEFAULT_VEHTYPE" speed="9.747600" pos="36.120809" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655782" y="-23.563731" angle="131.459412" type="DEFAULT_VEHTYPE" speed="8.415193" pos="25.856928" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655475" y="-23.562152" angle="311.804250" type="DEFAULT_VEHTYPE" speed="4.403785" pos="11.367627" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658860" y="-23.567030" angle="40.795385" type="DEFAULT_VEHTYPE" speed="1.711311" pos="6.811311" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660847" y="-23.573699" angle="41.534708" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="359790121#0_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="8.00">
+        <vehicle id="0" x="-46.657759" y="-23.565873" angle="40.412045" type="DEFAULT_VEHTYPE" speed="13.582267" pos="71.431130" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653734" y="-23.561132" angle="24.313485" type="DEFAULT_VEHTYPE" speed="13.182393" pos="59.662981" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655476" y="-23.568206" angle="41.260588" type="DEFAULT_VEHTYPE" speed="12.305457" pos="48.426267" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655705" y="-23.563794" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.499642" pos="36.356570" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655517" y="-23.562116" angle="311.804250" type="DEFAULT_VEHTYPE" speed="5.849872" pos="17.217499" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658839" y="-23.567008" angle="40.795385" type="DEFAULT_VEHTYPE" speed="3.239711" pos="10.051023" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660832" y="-23.573684" angle="41.534708" type="DEFAULT_VEHTYPE" speed="2.207709" pos="7.307709" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657451" y="-23.565661" angle="133.349017" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="426696415_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="9.00">
+        <vehicle id="0" x="-46.657675" y="-23.565784" angle="40.412045" type="DEFAULT_VEHTYPE" speed="12.999408" pos="84.430538" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653677" y="-23.561019" angle="24.313485" type="DEFAULT_VEHTYPE" speed="13.851230" pos="73.514211" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655387" y="-23.568115" angle="41.260588" type="DEFAULT_VEHTYPE" speed="13.459300" pos="61.885567" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655634" y="-23.563854" angle="131.459412" type="DEFAULT_VEHTYPE" speed="9.866433" pos="46.223003" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655577" y="-23.562066" angle="311.804250" type="DEFAULT_VEHTYPE" speed="8.243034" pos="25.460533" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658808" y="-23.566975" angle="40.795385" type="DEFAULT_VEHTYPE" speed="4.845859" pos="14.896881" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660801" y="-23.573653" angle="41.534708" type="DEFAULT_VEHTYPE" speed="4.639521" pos="11.947230" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657434" y="-23.565676" angle="133.349017" type="DEFAULT_VEHTYPE" speed="2.437003" pos="7.537003" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658853" y="-23.560932" angle="43.369858" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="424211755#3_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="10.00">
+        <vehicle id="0" x="-46.657591" y="-23.565695" angle="40.412045" type="DEFAULT_VEHTYPE" speed="13.146909" pos="97.577447" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653621" y="-23.560908" angle="24.313485" type="DEFAULT_VEHTYPE" speed="13.671663" pos="87.185874" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654910" y="-23.562847" angle="131.362044" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="2" x="-46.655299" y="-23.568024" angle="41.260588" type="DEFAULT_VEHTYPE" speed="13.576194" pos="75.461761" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655555" y="-23.563920" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.819929" pos="57.042932" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655653" y="-23.562002" angle="311.804250" type="DEFAULT_VEHTYPE" speed="10.499740" pos="35.960273" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658767" y="-23.566933" angle="40.795385" type="DEFAULT_VEHTYPE" speed="6.191953" pos="21.088834" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660761" y="-23.573612" angle="41.686262" type="DEFAULT_VEHTYPE" speed="6.184311" pos="18.131541" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657399" y="-23.565707" angle="133.349017" type="DEFAULT_VEHTYPE" speed="4.921274" pos="12.458277" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658839" y="-23.560918" angle="43.340030" type="DEFAULT_VEHTYPE" speed="2.065251" pos="7.165251" lane="424211755#3_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="11.00">
+        <vehicle id="0" x="-46.657503" y="-23.565604" angle="41.784883" type="DEFAULT_VEHTYPE" speed="13.489878" pos="4.017325" lane=":2397445826_1_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653569" y="-23.560804" angle="24.313485" type="DEFAULT_VEHTYPE" speed="12.642077" pos="99.827951" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654897" y="-23.562857" angle="131.362044" type="DEFAULT_VEHTYPE" speed="1.731436" pos="6.831436" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653946" y="-23.563886" angle="221.304364" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655212" y="-23.567935" angle="41.260588" type="DEFAULT_VEHTYPE" speed="13.249657" pos="88.711418" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655483" y="-23.563980" angle="131.459412" type="DEFAULT_VEHTYPE" speed="9.894431" pos="66.937364" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655703" y="-23.561960" angle="311.804250" type="DEFAULT_VEHTYPE" speed="6.875272" pos="42.835545" lane="423987651#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658715" y="-23.566879" angle="40.795385" type="DEFAULT_VEHTYPE" speed="8.016858" pos="29.105693" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660708" y="-23.573558" angle="41.686262" type="DEFAULT_VEHTYPE" speed="8.030222" pos="26.161763" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657348" y="-23.565753" angle="133.302306" type="DEFAULT_VEHTYPE" speed="7.302355" pos="19.760632" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658814" y="-23.560894" angle="43.340030" type="DEFAULT_VEHTYPE" speed="3.735024" pos="10.900275" lane="424211755#3_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="12.00">
+        <vehicle id="0" x="-46.657389" y="-23.565543" angle="69.015160" type="DEFAULT_VEHTYPE" speed="13.657329" pos="2.624654" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653541" y="-23.560679" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.527506" pos="113.355457" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654875" y="-23.562876" angle="131.362044" type="DEFAULT_VEHTYPE" speed="3.090060" pos="9.921496" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653955" y="-23.563895" angle="221.304364" type="DEFAULT_VEHTYPE" speed="1.310050" pos="6.410050" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655126" y="-23.567846" angle="41.260588" type="DEFAULT_VEHTYPE" speed="13.179200" pos="101.890618" lane="359790121#1_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655403" y="-23.564047" angle="131.459412" type="DEFAULT_VEHTYPE" speed="11.073811" pos="78.011174" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655691" y="-23.561889" angle="31.783736" type="DEFAULT_VEHTYPE" speed="9.277890" pos="0.183435" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658652" y="-23.566813" angle="40.795385" type="DEFAULT_VEHTYPE" speed="9.782727" pos="38.888420" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660645" y="-23.573495" angle="41.686262" type="DEFAULT_VEHTYPE" speed="9.423683" pos="35.585446" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657278" y="-23.565814" angle="133.237233" type="DEFAULT_VEHTYPE" speed="9.815290" pos="29.575922" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658795" y="-23.560834" angle="43.340030" type="DEFAULT_VEHTYPE" speed="6.096659" pos="16.996934" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="13.00">
+        <vehicle id="0" x="-46.657272" y="-23.565486" angle="61.105557" type="DEFAULT_VEHTYPE" speed="13.512951" pos="16.137605" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653481" y="-23.560570" angle="29.475997" type="DEFAULT_VEHTYPE" speed="13.481981" pos="126.837438" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654834" y="-23.562910" angle="131.362044" type="DEFAULT_VEHTYPE" speed="5.578237" pos="15.499733" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653974" y="-23.563915" angle="221.304364" type="DEFAULT_VEHTYPE" speed="2.971611" pos="9.381661" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.661073" y="-23.559159" angle="133.095404" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.655036" y="-23.567755" angle="41.403283" type="DEFAULT_VEHTYPE" speed="13.655138" pos="6.085756" lane=":151273485_0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655324" y="-23.564112" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.840679" pos="88.851853" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655616" y="-23.561813" angle="41.793127" type="DEFAULT_VEHTYPE" speed="11.420491" pos="11.603926" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658577" y="-23.566734" angle="40.795385" type="DEFAULT_VEHTYPE" speed="11.645436" pos="50.533855" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660567" y="-23.573415" angle="41.686262" type="DEFAULT_VEHTYPE" speed="11.962785" pos="47.548231" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657192" y="-23.565891" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.311290" pos="41.887212" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658739" y="-23.560780" angle="43.340030" type="DEFAULT_VEHTYPE" speed="8.255941" pos="25.252875" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="14.00">
+        <vehicle id="0" x="-46.657195" y="-23.565397" angle="36.462019" type="DEFAULT_VEHTYPE" speed="12.620130" pos="28.757736" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653417" y="-23.560468" angle="29.551688" type="DEFAULT_VEHTYPE" speed="13.007719" pos="139.845157" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654781" y="-23.562954" angle="131.362044" type="DEFAULT_VEHTYPE" speed="7.378587" pos="22.878320" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654007" y="-23.563948" angle="221.304364" type="DEFAULT_VEHTYPE" speed="5.029283" pos="14.410944" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655659" y="-23.561856" angle="41.793127" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.661057" y="-23.559174" angle="133.095404" type="DEFAULT_VEHTYPE" speed="2.323923" pos="7.423923" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648963" y="-23.564363" angle="131.423666" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654945" y="-23.567662" angle="41.312441" type="DEFAULT_VEHTYPE" speed="13.859001" pos="13.744757" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655248" y="-23.564176" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.443332" pos="99.295185" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655527" y="-23.561724" angle="41.793127" type="DEFAULT_VEHTYPE" speed="13.415272" pos="25.019199" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658490" y="-23.566643" angle="40.795385" type="DEFAULT_VEHTYPE" speed="13.383325" pos="63.917180" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660482" y="-23.573330" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.816808" pos="60.365039" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657099" y="-23.565973" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.129479" pos="55.016691" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658669" y="-23.560713" angle="43.340030" type="DEFAULT_VEHTYPE" speed="10.305755" pos="35.558631" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="15.00">
+        <vehicle id="0" x="-46.657126" y="-23.565302" angle="30.933813" type="DEFAULT_VEHTYPE" speed="12.627068" pos="41.384804" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653349" y="-23.560361" angle="29.551688" type="DEFAULT_VEHTYPE" speed="13.753866" pos="153.599023" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654714" y="-23.563010" angle="131.362044" type="DEFAULT_VEHTYPE" speed="9.165789" pos="32.044108" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654053" y="-23.563996" angle="221.304364" type="DEFAULT_VEHTYPE" speed="7.036773" pos="21.447718" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655647" y="-23.561844" angle="41.793127" type="DEFAULT_VEHTYPE" speed="1.854251" pos="6.954251" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.661025" y="-23.559202" angle="133.095404" type="DEFAULT_VEHTYPE" speed="4.530363" pos="11.954287" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648948" y="-23.564376" angle="131.423666" type="DEFAULT_VEHTYPE" speed="2.065596" pos="7.165596" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658637" y="-23.564723" angle="222.689642" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654857" y="-23.567571" angle="41.315362" type="DEFAULT_VEHTYPE" speed="13.504784" pos="27.249541" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655172" y="-23.564239" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.469516" pos="109.764700" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655443" y="-23.561639" angle="41.793127" type="DEFAULT_VEHTYPE" speed="12.754020" pos="37.773218" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658407" y="-23.566557" angle="40.795385" type="DEFAULT_VEHTYPE" speed="12.687623" pos="76.604803" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660394" y="-23.573241" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.337366" pos="73.702405" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.657007" y="-23.566054" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.966027" pos="67.982718" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658589" y="-23.560637" angle="43.340030" type="DEFAULT_VEHTYPE" speed="11.767555" pos="47.326186" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="16.00">
+        <vehicle id="0" x="-46.657062" y="-23.565204" angle="30.804125" type="DEFAULT_VEHTYPE" speed="12.743403" pos="54.128206" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653285" y="-23.560259" angle="29.909152" type="DEFAULT_VEHTYPE" speed="12.980673" pos="166.579695" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654633" y="-23.563077" angle="131.362044" type="DEFAULT_VEHTYPE" speed="11.159566" pos="43.203674" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654115" y="-23.564059" angle="221.304364" type="DEFAULT_VEHTYPE" speed="9.475187" pos="30.922904" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655618" y="-23.561815" angle="41.793127" type="DEFAULT_VEHTYPE" speed="4.270749" pos="11.225000" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660977" y="-23.559244" angle="133.095404" type="DEFAULT_VEHTYPE" speed="6.684630" pos="18.638916" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648919" y="-23.564400" angle="131.423666" type="DEFAULT_VEHTYPE" speed="4.041567" pos="11.207163" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658655" y="-23.564740" angle="222.689642" type="DEFAULT_VEHTYPE" speed="2.544627" pos="7.644627" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652128" y="-23.564778" angle="41.519796" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654769" y="-23.567481" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.406905" pos="40.656446" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655099" y="-23.564300" angle="131.459412" type="DEFAULT_VEHTYPE" speed="10.094699" pos="119.859399" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655417" y="-23.561527" angle="2.739886" type="DEFAULT_VEHTYPE" speed="12.962741" pos="50.735960" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658336" y="-23.566483" angle="40.795385" type="DEFAULT_VEHTYPE" speed="10.944369" pos="87.549172" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660305" y="-23.573150" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.524431" pos="87.226836" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656916" y="-23.566136" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.964118" pos="80.946836" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658495" y="-23.560547" angle="43.340030" type="DEFAULT_VEHTYPE" speed="13.758016" pos="61.084202" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="17.00">
+        <vehicle id="0" x="-46.656996" y="-23.565100" angle="26.303486" type="DEFAULT_VEHTYPE" speed="13.396708" pos="67.524914" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653219" y="-23.560158" angle="30.048323" type="DEFAULT_VEHTYPE" speed="13.012069" pos="179.591764" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654541" y="-23.563154" angle="131.362044" type="DEFAULT_VEHTYPE" speed="12.660432" pos="55.864106" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654191" y="-23.564136" angle="221.304364" type="DEFAULT_VEHTYPE" speed="11.515071" pos="42.437975" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655575" y="-23.561772" angle="41.793127" type="DEFAULT_VEHTYPE" speed="6.510280" pos="17.735280" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660915" y="-23.559299" angle="133.095404" type="DEFAULT_VEHTYPE" speed="8.776769" pos="27.415685" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648876" y="-23.564436" angle="131.423666" type="DEFAULT_VEHTYPE" speed="5.871074" pos="17.078237" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658684" y="-23.564769" angle="222.689642" type="DEFAULT_VEHTYPE" speed="4.399288" pos="12.043915" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652112" y="-23.564762" angle="41.519796" type="DEFAULT_VEHTYPE" speed="2.466261" pos="7.566261" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662956" y="-23.560803" angle="134.717395" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654684" y="-23.567394" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.004897" pos="53.661344" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.655027" y="-23.564360" angle="131.459412" type="DEFAULT_VEHTYPE" speed="9.934245" pos="129.793644" lane="426696424_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655441" y="-23.561411" angle="346.343384" type="DEFAULT_VEHTYPE" speed="13.124180" pos="4.070140" lane=":2099094544_0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658288" y="-23.566432" angle="40.795385" type="DEFAULT_VEHTYPE" speed="7.535283" pos="95.084455" lane="231355585#5_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660216" y="-23.573061" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.442077" pos="100.668913" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656824" y="-23.566217" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.027707" pos="93.974543" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658410" y="-23.560465" angle="43.340030" type="DEFAULT_VEHTYPE" speed="12.618322" pos="73.702524" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="18.00">
+        <vehicle id="0" x="-46.656946" y="-23.564985" angle="20.849661" type="DEFAULT_VEHTYPE" speed="13.672245" pos="81.197159" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653157" y="-23.560054" angle="28.214879" type="DEFAULT_VEHTYPE" speed="13.056540" pos="192.648304" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654448" y="-23.563230" angle="131.362044" type="DEFAULT_VEHTYPE" speed="12.661781" pos="68.525887" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654278" y="-23.564226" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.262502" pos="55.700477" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655523" y="-23.561719" angle="41.793127" type="DEFAULT_VEHTYPE" speed="7.935906" pos="25.671187" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660845" y="-23.559361" angle="133.095404" type="DEFAULT_VEHTYPE" speed="9.996471" pos="37.412157" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648822" y="-23.564481" angle="131.423666" type="DEFAULT_VEHTYPE" speed="7.433732" pos="24.511969" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658727" y="-23.564811" angle="222.689642" type="DEFAULT_VEHTYPE" speed="6.387916" pos="18.431831" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652081" y="-23.564731" angle="41.519796" type="DEFAULT_VEHTYPE" speed="4.625748" pos="12.192009" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662944" y="-23.560814" angle="134.015038" type="DEFAULT_VEHTYPE" speed="1.743784" pos="6.843784" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650444" y="-23.563127" angle="131.665748" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654596" y="-23.567304" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.440418" pos="67.101762" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654924" y="-23.564405" angle="131.461695" type="DEFAULT_VEHTYPE" speed="11.090987" pos="140.884631" lane="426696424_2" slope="0.000000"/>
+        <vehicle id="5" x="-46.655480" y="-23.561291" angle="342.928799" type="DEFAULT_VEHTYPE" speed="13.888888" pos="12.789028" lane="16257538#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658268" y="-23.566411" angle="40.489680" type="DEFAULT_VEHTYPE" speed="3.035283" pos="1.779738" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660133" y="-23.572976" angle="41.474531" type="DEFAULT_VEHTYPE" speed="12.614757" pos="113.283670" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656734" y="-23.566297" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.736629" pos="106.711172" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658322" y="-23.560382" angle="43.340030" type="DEFAULT_VEHTYPE" speed="12.822570" pos="86.525095" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="19.00">
+        <vehicle id="0" x="-46.656899" y="-23.564873" angle="20.849661" type="DEFAULT_VEHTYPE" speed="13.256323" pos="94.453481" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653106" y="-23.559949" angle="21.879830" type="DEFAULT_VEHTYPE" speed="12.708106" pos="205.356410" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654348" y="-23.563313" angle="131.362044" type="DEFAULT_VEHTYPE" speed="13.741355" pos="82.267242" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654365" y="-23.564315" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.378489" pos="69.078966" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655462" y="-23.561658" angle="41.793127" type="DEFAULT_VEHTYPE" speed="9.240135" pos="34.911321" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660770" y="-23.559427" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.477667" pos="47.889823" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648757" y="-23.564535" angle="131.423666" type="DEFAULT_VEHTYPE" speed="9.014486" pos="33.526455" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658783" y="-23.564866" angle="222.689642" type="DEFAULT_VEHTYPE" speed="8.386163" pos="26.817994" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652041" y="-23.564690" angle="41.519796" type="DEFAULT_VEHTYPE" speed="6.128973" pos="18.320982" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662916" y="-23.560838" angle="132.986210" type="DEFAULT_VEHTYPE" speed="3.911107" pos="10.754892" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650426" y="-23.563142" angle="131.665748" type="DEFAULT_VEHTYPE" speed="2.400651" pos="7.500651" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655294" y="-23.560534" angle="206.570965" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654513" y="-23.567219" angle="41.316748" type="DEFAULT_VEHTYPE" speed="12.672976" pos="79.774738" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654852" y="-23.564465" angle="131.461695" type="DEFAULT_VEHTYPE" speed="9.915783" pos="150.800414" lane="426696424_2" slope="0.000000"/>
+        <vehicle id="5" x="-46.655517" y="-23.561172" angle="343.924407" type="DEFAULT_VEHTYPE" speed="13.620242" pos="2.359271" lane=":165462605_0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429959" type="DEFAULT_VEHTYPE" speed="0.396933" pos="2.176671" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.660049" y="-23.572891" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.783316" pos="126.066986" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656644" y="-23.566377" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.824846" pos="119.536018" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658231" y="-23.560295" angle="43.340030" type="DEFAULT_VEHTYPE" speed="13.354583" pos="99.879678" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="20.00">
+        <vehicle id="0" x="-46.656849" y="-23.564758" angle="20.849661" type="DEFAULT_VEHTYPE" speed="13.762986" pos="108.216467" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653055" y="-23.559837" angle="21.879830" type="DEFAULT_VEHTYPE" speed="13.413538" pos="218.769948" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654249" y="-23.563396" angle="131.362044" type="DEFAULT_VEHTYPE" speed="13.685100" pos="95.952342" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654450" y="-23.564402" angle="221.304364" type="DEFAULT_VEHTYPE" speed="12.863622" pos="81.942587" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655418" y="-23.561564" angle="12.392188" type="DEFAULT_VEHTYPE" speed="11.691071" pos="46.602392" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660696" y="-23.559492" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.532021" pos="58.421844" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648678" y="-23.564601" angle="131.423666" type="DEFAULT_VEHTYPE" speed="10.813929" pos="44.340384" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658856" y="-23.564936" angle="222.689642" type="DEFAULT_VEHTYPE" speed="10.732220" pos="37.550215" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651992" y="-23.564639" angle="41.519796" type="DEFAULT_VEHTYPE" speed="7.533550" pos="25.854531" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662873" y="-23.560876" angle="132.986210" type="DEFAULT_VEHTYPE" speed="6.094019" pos="16.848911" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650392" y="-23.563170" angle="131.665748" type="DEFAULT_VEHTYPE" speed="4.674997" pos="12.175647" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655303" y="-23.560550" angle="206.570965" type="DEFAULT_VEHTYPE" speed="2.019511" pos="7.119511" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654424" y="-23.567127" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.596229" pos="93.370966" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654775" y="-23.564530" angle="131.461695" type="DEFAULT_VEHTYPE" speed="10.689546" pos="161.489960" lane="426696424_2" slope="0.000000"/>
+        <vehicle id="5" x="-46.655484" y="-23.561063" angle="24.383133" type="DEFAULT_VEHTYPE" speed="12.784001" pos="3.413272" lane=":4657849095_0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429735" type="DEFAULT_VEHTYPE" speed="0.001487" pos="2.178158" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659963" y="-23.572803" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.136567" pos="139.203553" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656547" y="-23.566463" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.721654" pos="133.257672" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658144" y="-23.560212" angle="43.340030" type="DEFAULT_VEHTYPE" speed="12.847730" pos="112.727408" lane="424211755#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="21.00">
+        <vehicle id="0" x="-46.656800" y="-23.564641" angle="20.849661" type="DEFAULT_VEHTYPE" speed="13.844980" pos="122.061448" lane="231355581_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.653004" y="-23.559723" angle="21.879830" type="DEFAULT_VEHTYPE" speed="13.603191" pos="232.373139" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654153" y="-23.563475" angle="131.362044" type="DEFAULT_VEHTYPE" speed="13.150831" pos="109.103173" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654540" y="-23.564494" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.780041" pos="95.722629" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655432" y="-23.561447" angle="349.585084" type="DEFAULT_VEHTYPE" speed="13.149544" pos="59.751936" lane="16257538#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660626" y="-23.559554" angle="133.095404" type="DEFAULT_VEHTYPE" speed="9.887083" pos="68.308927" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648604" y="-23.564662" angle="131.423666" type="DEFAULT_VEHTYPE" speed="10.146601" pos="54.486985" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.658939" y="-23.565018" angle="222.689642" type="DEFAULT_VEHTYPE" speed="12.466283" pos="50.016498" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651926" y="-23.564572" angle="41.519796" type="DEFAULT_VEHTYPE" speed="9.978292" pos="35.832823" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662815" y="-23.560927" angle="132.986210" type="DEFAULT_VEHTYPE" speed="8.101601" pos="24.950511" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650340" y="-23.563214" angle="131.665748" type="DEFAULT_VEHTYPE" speed="7.265463" pos="19.441111" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655321" y="-23.560582" angle="206.570965" type="DEFAULT_VEHTYPE" speed="4.013936" pos="11.133447" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654339" y="-23.567041" angle="41.316748" type="DEFAULT_VEHTYPE" speed="12.915561" pos="106.286527" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660847" y="-23.573699" angle="41.534708" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654710" y="-23.564604" angle="146.294807" type="DEFAULT_VEHTYPE" speed="10.862320" pos="2.672280" lane="426696423_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655384" y="-23.561102" angle="131.544196" type="DEFAULT_VEHTYPE" speed="13.125003" pos="7.688275" lane="38630652#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429623" type="DEFAULT_VEHTYPE" speed="0.000742" pos="2.178900" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659878" y="-23.572717" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.859089" pos="152.062643" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656452" y="-23.566547" angle="133.205779" type="DEFAULT_VEHTYPE" speed="13.365683" pos="146.623355" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.658052" y="-23.560137" angle="55.675739" type="DEFAULT_VEHTYPE" speed="12.696578" pos="3.593985" lane=":1953466367_0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="22.00">
+        <vehicle id="0" x="-46.656778" y="-23.564531" angle="342.339836" type="DEFAULT_VEHTYPE" speed="13.590550" pos="0.691997" lane="369467064#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652953" y="-23.559609" angle="21.879830" type="DEFAULT_VEHTYPE" speed="13.642229" pos="246.015368" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.654061" y="-23.563552" angle="131.362044" type="DEFAULT_VEHTYPE" speed="12.613020" pos="121.716192" lane="230628536#2_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654607" y="-23.564563" angle="221.304364" type="DEFAULT_VEHTYPE" speed="10.300309" pos="106.022938" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655466" y="-23.561333" angle="342.928799" type="DEFAULT_VEHTYPE" speed="13.137069" pos="7.929006" lane="16257538#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660553" y="-23.559619" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.324096" pos="78.633023" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648532" y="-23.564722" angle="131.423666" type="DEFAULT_VEHTYPE" speed="9.885308" pos="64.372293" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659025" y="-23.565102" angle="222.689642" type="DEFAULT_VEHTYPE" speed="12.713686" pos="62.730184" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651845" y="-23.564490" angle="41.519796" type="DEFAULT_VEHTYPE" speed="12.289791" pos="48.122614" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662748" y="-23.560986" angle="132.986210" type="DEFAULT_VEHTYPE" speed="9.511282" pos="34.461793" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650270" y="-23.563272" angle="131.665748" type="DEFAULT_VEHTYPE" speed="9.565176" pos="29.006286" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655346" y="-23.560627" angle="206.570965" type="DEFAULT_VEHTYPE" speed="5.583240" pos="16.716687" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654253" y="-23.566952" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.180594" pos="119.467122" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660830" y="-23.573682" angle="41.534708" type="DEFAULT_VEHTYPE" speed="2.457432" pos="7.557432" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654413" y="-23.563025" angle="311.297554" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="3" x="-46.654634" y="-23.564667" angle="131.374072" type="DEFAULT_VEHTYPE" speed="10.550640" pos="2.532920" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655285" y="-23.561185" angle="131.544196" type="DEFAULT_VEHTYPE" speed="13.645610" pos="21.333884" lane="38630652#0_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429614" type="DEFAULT_VEHTYPE" speed="0.000063" pos="2.178963" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659790" y="-23.572627" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.377229" pos="165.439872" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656359" y="-23.566629" angle="133.301659" type="DEFAULT_VEHTYPE" speed="13.203179" pos="159.826535" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657948" y="-23.560211" angle="133.414084" type="DEFAULT_VEHTYPE" speed="13.779415" pos="9.463401" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="23.00">
+        <vehicle id="0" x="-46.656846" y="-23.564475" angle="311.205836" type="DEFAULT_VEHTYPE" speed="9.308756" pos="10.000753" lane="369467064#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652905" y="-23.559503" angle="21.879830" type="DEFAULT_VEHTYPE" speed="12.671264" pos="258.686632" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653965" y="-23.563633" angle="131.976798" type="DEFAULT_VEHTYPE" speed="13.414807" pos="8.380999" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654645" y="-23.564602" angle="221.093150" type="DEFAULT_VEHTYPE" speed="5.800309" pos="4.123247" lane="426696447_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.655502" y="-23.561221" angle="342.928799" type="DEFAULT_VEHTYPE" speed="12.856505" pos="20.785511" lane="16257538#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660477" y="-23.559685" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.707159" pos="89.340182" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648452" y="-23.564789" angle="131.423666" type="DEFAULT_VEHTYPE" speed="11.069045" pos="75.441338" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659110" y="-23.565185" angle="222.689642" type="DEFAULT_VEHTYPE" speed="12.696236" pos="75.426420" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651755" y="-23.564399" angle="41.519796" type="DEFAULT_VEHTYPE" speed="13.627467" pos="61.750081" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662665" y="-23.561059" angle="132.986210" type="DEFAULT_VEHTYPE" speed="11.665489" pos="46.127282" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650193" y="-23.563338" angle="131.665748" type="DEFAULT_VEHTYPE" speed="10.739828" pos="39.746114" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655378" y="-23.560685" angle="206.570965" type="DEFAULT_VEHTYPE" speed="7.193925" pos="23.910612" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654162" y="-23.566859" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.849003" pos="133.316125" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660799" y="-23.573650" angle="41.534708" type="DEFAULT_VEHTYPE" speed="4.782214" pos="12.339646" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654429" y="-23.563012" angle="311.297554" type="DEFAULT_VEHTYPE" speed="2.149260" pos="7.249260" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.648978" y="-23.567531" angle="312.540628" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="3" x="-46.654557" y="-23.564731" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.528956" pos="13.061876" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655185" y="-23.561269" angle="132.173916" type="DEFAULT_VEHTYPE" speed="13.838586" pos="3.452470" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429611" type="DEFAULT_VEHTYPE" speed="0.000022" pos="2.178985" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659699" y="-23.572534" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.872715" pos="179.312587" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656266" y="-23.566712" angle="133.317093" type="DEFAULT_VEHTYPE" speed="13.141841" pos="172.968376" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657853" y="-23.560296" angle="133.431051" type="DEFAULT_VEHTYPE" speed="13.496936" pos="22.960337" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="24.00">
+        <vehicle id="0" x="-46.656881" y="-23.564446" angle="311.205836" type="DEFAULT_VEHTYPE" speed="4.808756" pos="14.809508" lane="369467064#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652825" y="-23.559419" angle="51.531232" type="DEFAULT_VEHTYPE" speed="12.735884" pos="271.422516" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653900" y="-23.563688" angle="131.976798" type="DEFAULT_VEHTYPE" speed="8.914807" pos="17.295805" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654647" y="-23.564656" angle="163.468002" type="DEFAULT_VEHTYPE" speed="7.208443" pos="0.731690" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655503" y="-23.561100" angle="14.405297" type="DEFAULT_VEHTYPE" speed="13.826930" pos="1.832440" lane="471622251_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660402" y="-23.559752" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.666207" pos="100.006388" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648377" y="-23.564851" angle="131.423666" type="DEFAULT_VEHTYPE" speed="10.260992" pos="85.702330" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659202" y="-23.565274" angle="222.689642" type="DEFAULT_VEHTYPE" speed="13.576048" pos="89.002468" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651673" y="-23.564315" angle="41.519796" type="DEFAULT_VEHTYPE" speed="12.597045" pos="74.347126" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662575" y="-23.561138" angle="132.986210" type="DEFAULT_VEHTYPE" speed="12.728315" pos="58.855597" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650118" y="-23.563400" angle="131.665748" type="DEFAULT_VEHTYPE" speed="10.257855" pos="50.003969" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655420" y="-23.560758" angle="206.570965" type="DEFAULT_VEHTYPE" speed="9.171223" pos="33.081835" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.654074" y="-23.566769" angle="41.330892" type="DEFAULT_VEHTYPE" speed="13.475201" pos="4.271325" lane=":151275042_3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660752" y="-23.573602" angle="41.686262" type="DEFAULT_VEHTYPE" speed="7.182560" pos="19.522206" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654459" y="-23.562987" angle="311.297554" type="DEFAULT_VEHTYPE" speed="4.090250" pos="11.339510" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.648991" y="-23.567519" angle="312.540628" type="DEFAULT_VEHTYPE" speed="1.891941" pos="6.991941" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.649919" y="-23.565245" angle="222.177728" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654483" y="-23.564793" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.194552" pos="23.256428" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.655092" y="-23.561349" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.928855" pos="16.381325" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429609" type="DEFAULT_VEHTYPE" speed="0.000012" pos="2.178997" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659610" y="-23.572444" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.508505" pos="192.821091" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656171" y="-23.566797" angle="133.317093" type="DEFAULT_VEHTYPE" speed="13.609231" pos="186.577607" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657762" y="-23.560377" angle="133.431051" type="DEFAULT_VEHTYPE" speed="12.854561" pos="35.814899" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="25.00">
+        <vehicle id="0" x="-46.656927" y="-23.564407" angle="311.928704" type="DEFAULT_VEHTYPE" speed="6.402112" pos="4.961620" lane=":3731405195_3_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652719" y="-23.559343" angle="51.531232" type="DEFAULT_VEHTYPE" speed="13.651179" pos="285.073696" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653865" y="-23.563718" angle="131.976798" type="DEFAULT_VEHTYPE" speed="4.902451" pos="22.198256" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654583" y="-23.564709" angle="131.396956" type="DEFAULT_VEHTYPE" speed="8.770838" pos="9.502528" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655421" y="-23.561072" angle="121.817435" type="DEFAULT_VEHTYPE" speed="12.649638" pos="2.632078" lane="38630652#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660327" y="-23.559818" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.594289" pos="110.600678" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648305" y="-23.564911" angle="131.423666" type="DEFAULT_VEHTYPE" speed="9.906433" pos="95.608763" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659293" y="-23.565363" angle="222.689642" type="DEFAULT_VEHTYPE" speed="13.577231" pos="102.579699" lane="85796595_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651589" y="-23.564230" angle="41.519796" type="DEFAULT_VEHTYPE" speed="12.724857" pos="87.071983" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662481" y="-23.561220" angle="132.986210" type="DEFAULT_VEHTYPE" speed="13.231812" pos="72.087409" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.650042" y="-23.563464" angle="131.665748" type="DEFAULT_VEHTYPE" speed="10.581148" pos="60.585117" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655469" y="-23.560847" angle="207.289501" type="DEFAULT_VEHTYPE" speed="11.021816" pos="44.103651" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653990" y="-23.566683" angle="41.351025" type="DEFAULT_VEHTYPE" speed="12.718610" pos="7.489936" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660694" y="-23.573544" angle="41.686262" type="DEFAULT_VEHTYPE" speed="8.686376" pos="28.208582" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654499" y="-23.562954" angle="311.297554" type="DEFAULT_VEHTYPE" speed="5.495616" pos="16.835126" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649023" y="-23.567491" angle="312.540628" type="DEFAULT_VEHTYPE" speed="4.477518" pos="11.469459" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.649930" y="-23.565257" angle="222.177728" type="DEFAULT_VEHTYPE" speed="1.698735" pos="6.798735" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654409" y="-23.564854" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.147715" pos="33.404142" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.654995" y="-23.561432" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.496012" pos="29.877337" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000002" pos="2.178999" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659523" y="-23.572355" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.201706" pos="206.022797" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.656079" y="-23.566879" angle="133.317093" type="DEFAULT_VEHTYPE" speed="13.045043" pos="199.622650" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657665" y="-23.560464" angle="133.431051" type="DEFAULT_VEHTYPE" speed="13.855393" pos="49.670292" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="26.00">
+        <vehicle id="0" x="-46.656987" y="-23.564357" angle="311.433714" type="DEFAULT_VEHTYPE" speed="8.260585" pos="3.622206" lane="369467064#2_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652609" y="-23.559277" angle="59.058598" type="DEFAULT_VEHTYPE" speed="13.471995" pos="298.545691" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653860" y="-23.563722" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.682370" pos="22.880627" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654508" y="-23.564772" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.324437" pos="19.826965" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655325" y="-23.561152" angle="131.544196" type="DEFAULT_VEHTYPE" speed="13.187522" pos="15.819600" lane="38630652#0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660256" y="-23.559880" angle="133.083756" type="DEFAULT_VEHTYPE" speed="9.952090" pos="120.552767" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648224" y="-23.564978" angle="131.423666" type="DEFAULT_VEHTYPE" speed="11.099817" pos="106.708579" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659389" y="-23.565379" angle="304.893717" type="DEFAULT_VEHTYPE" speed="12.604552" pos="2.834251" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651505" y="-23.564144" angle="41.519796" type="DEFAULT_VEHTYPE" speed="12.778096" pos="99.850080" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662384" y="-23.561306" angle="132.986210" type="DEFAULT_VEHTYPE" speed="13.702895" pos="85.790304" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649962" y="-23.563532" angle="131.665748" type="DEFAULT_VEHTYPE" speed="11.036107" pos="71.621224" lane="38630645#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655537" y="-23.560947" angle="211.084414" type="DEFAULT_VEHTYPE" speed="13.065747" pos="57.169398" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653900" y="-23.566591" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.833965" pos="21.323900" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660627" y="-23.573476" angle="41.686262" type="DEFAULT_VEHTYPE" speed="10.178305" pos="38.386886" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654549" y="-23.562912" angle="311.297554" type="DEFAULT_VEHTYPE" speed="6.915838" pos="23.750964" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649071" y="-23.567451" angle="311.798963" type="DEFAULT_VEHTYPE" speed="6.651725" pos="18.121185" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.649956" y="-23.565283" angle="222.177728" type="DEFAULT_VEHTYPE" speed="3.974487" pos="10.773222" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651807" y="-23.560195" angle="218.458282" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654336" y="-23.564915" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.083016" pos="43.487158" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.654896" y="-23.561517" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.807979" pos="43.685316" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659433" y="-23.572263" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.788067" pos="219.810864" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655984" y="-23.566963" angle="133.317093" type="DEFAULT_VEHTYPE" speed="13.436407" pos="213.059057" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657567" y="-23.560551" angle="133.431051" type="DEFAULT_VEHTYPE" speed="13.868669" pos="63.538961" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="27.00">
+        <vehicle id="0" x="-46.657060" y="-23.564297" angle="311.241766" type="DEFAULT_VEHTYPE" speed="9.973054" pos="13.595260" lane="369467064#2_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652500" y="-23.559218" angle="59.058598" type="DEFAULT_VEHTYPE" speed="12.829447" pos="311.375138" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653857" y="-23.563724" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.359082" pos="23.239708" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654436" y="-23.564832" angle="131.396956" type="DEFAULT_VEHTYPE" speed="9.940372" pos="29.767337" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655233" y="-23.561228" angle="131.698620" type="DEFAULT_VEHTYPE" speed="12.623042" pos="1.812642" lane=":2099094542_0_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660181" y="-23.559947" angle="133.090049" type="DEFAULT_VEHTYPE" speed="10.615167" pos="131.167935" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="14" x="-46.648145" y="-23.565045" angle="131.423666" type="DEFAULT_VEHTYPE" speed="10.963766" pos="117.672345" lane="38630645#4_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659488" y="-23.565294" angle="312.110129" type="DEFAULT_VEHTYPE" speed="13.811656" pos="16.645908" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651424" y="-23.564061" angle="41.519796" type="DEFAULT_VEHTYPE" speed="12.347425" pos="112.197504" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662287" y="-23.561392" angle="132.986210" type="DEFAULT_VEHTYPE" speed="13.783169" pos="99.573473" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649883" y="-23.563597" angle="131.560975" type="DEFAULT_VEHTYPE" speed="10.846452" pos="4.177675" lane=":457566749_0_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655607" y="-23.561051" angle="211.084414" type="DEFAULT_VEHTYPE" speed="13.550281" pos="70.719679" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653816" y="-23.566505" angle="41.351025" type="DEFAULT_VEHTYPE" speed="12.719120" pos="34.043020" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660545" y="-23.573393" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.421756" pos="50.808643" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654616" y="-23.562857" angle="311.297554" type="DEFAULT_VEHTYPE" speed="9.229271" pos="32.980235" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649132" y="-23.567400" angle="311.288212" type="DEFAULT_VEHTYPE" speed="8.335707" pos="26.456892" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.649997" y="-23.565323" angle="222.177728" type="DEFAULT_VEHTYPE" speed="6.024786" pos="16.798008" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651816" y="-23.560206" angle="218.458282" type="DEFAULT_VEHTYPE" speed="1.454151" pos="6.554151" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660847" y="-23.573699" angle="41.534708" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654262" y="-23.564976" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.119962" pos="53.607121" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.654805" y="-23.561596" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.801843" pos="56.487159" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659343" y="-23.572171" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.695702" pos="233.506567" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655891" y="-23.567046" angle="133.317093" type="DEFAULT_VEHTYPE" speed="13.223659" pos="226.282717" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657475" y="-23.560633" angle="133.431051" type="DEFAULT_VEHTYPE" speed="13.115161" pos="76.654122" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="28.00">
+        <vehicle id="0" x="-46.657146" y="-23.564225" angle="311.638714" type="DEFAULT_VEHTYPE" speed="11.883346" pos="0.618606" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652393" y="-23.559160" angle="59.058598" type="DEFAULT_VEHTYPE" speed="12.627933" pos="324.003071" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653856" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.214000" pos="23.453708" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654357" y="-23.564897" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.761191" pos="40.528528" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655139" y="-23.561309" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.148755" pos="9.871397" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660111" y="-23.560008" angle="133.097348" type="DEFAULT_VEHTYPE" speed="9.894056" pos="141.061991" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659585" y="-23.565212" angle="312.110129" type="DEFAULT_VEHTYPE" speed="13.462161" pos="30.108069" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651372" y="-23.564009" angle="41.519796" type="DEFAULT_VEHTYPE" speed="7.847425" pos="120.044929" lane="230628527#0_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.662188" y="-23.561478" angle="132.986210" type="DEFAULT_VEHTYPE" speed="13.883300" pos="113.456773" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649804" y="-23.563663" angle="131.310507" type="DEFAULT_VEHTYPE" speed="10.919678" pos="7.947354" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655677" y="-23.561155" angle="210.972466" type="DEFAULT_VEHTYPE" speed="13.581773" pos="84.301453" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653731" y="-23.566418" angle="41.351025" type="DEFAULT_VEHTYPE" speed="12.937640" pos="46.980661" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660461" y="-23.573308" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.777063" pos="63.585706" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654699" y="-23.562788" angle="311.297554" type="DEFAULT_VEHTYPE" speed="11.362720" pos="44.342955" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649211" y="-23.567335" angle="311.288212" type="DEFAULT_VEHTYPE" speed="10.780272" pos="37.237163" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650046" y="-23.565373" angle="222.177728" type="DEFAULT_VEHTYPE" speed="7.492179" pos="24.290187" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651834" y="-23.560226" angle="218.458282" type="DEFAULT_VEHTYPE" speed="2.955452" pos="9.509603" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660838" y="-23.573690" angle="41.534708" type="DEFAULT_VEHTYPE" speed="1.312583" pos="6.412583" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654189" y="-23.565037" angle="131.396956" type="DEFAULT_VEHTYPE" speed="9.999517" pos="63.606637" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.654710" y="-23.561677" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.187655" pos="69.674814" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659257" y="-23.572084" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.105633" pos="246.612199" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655798" y="-23.567128" angle="132.945404" type="DEFAULT_VEHTYPE" speed="13.063859" pos="239.346575" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657381" y="-23.560717" angle="133.431051" type="DEFAULT_VEHTYPE" speed="13.331311" pos="89.985433" lane="230628537#0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="29.00">
+        <vehicle id="0" x="-46.657246" y="-23.564140" angle="311.727550" type="DEFAULT_VEHTYPE" speed="13.871392" pos="14.489998" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652281" y="-23.559103" angle="60.350136" type="DEFAULT_VEHTYPE" speed="13.013850" pos="337.016921" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653856" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.046631" pos="23.500339" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654278" y="-23.564963" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.928350" pos="51.456878" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.655044" y="-23.561390" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.215294" pos="23.086690" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.660039" y="-23.560073" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.272486" pos="151.334476" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659683" y="-23.565128" angle="312.110129" type="DEFAULT_VEHTYPE" speed="13.694832" pos="43.802900" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651346" y="-23.563948" angle="357.390579" type="DEFAULT_VEHTYPE" speed="9.390615" pos="5.615544" lane=":151275041_5_1" slope="0.000000"/>
+        <vehicle id="17" x="-46.662094" y="-23.561561" angle="132.986210" type="DEFAULT_VEHTYPE" speed="13.338519" pos="126.795292" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649728" y="-23.563726" angle="131.310507" type="DEFAULT_VEHTYPE" speed="10.387855" pos="18.335209" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655734" y="-23.561257" angle="206.726220" type="DEFAULT_VEHTYPE" speed="12.627409" pos="96.928862" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653645" y="-23.566330" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.182424" pos="60.163085" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660374" y="-23.573220" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.202757" pos="76.788463" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654792" y="-23.562710" angle="311.297554" type="DEFAULT_VEHTYPE" speed="12.834429" pos="57.177384" lane="230628533#2_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649307" y="-23.567255" angle="311.288212" type="DEFAULT_VEHTYPE" speed="13.225190" pos="50.462354" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650109" y="-23.565435" angle="222.177728" type="DEFAULT_VEHTYPE" speed="9.412025" pos="33.702212" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651865" y="-23.560261" angle="218.458282" type="DEFAULT_VEHTYPE" speed="5.002453" pos="14.512056" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660814" y="-23.573665" angle="41.534708" type="DEFAULT_VEHTYPE" speed="3.640542" pos="10.053126" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654109" y="-23.565104" angle="131.396956" type="DEFAULT_VEHTYPE" speed="11.058131" pos="74.664768" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="5" x="-46.654614" y="-23.561759" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.334386" pos="83.009200" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659172" y="-23.571997" angle="41.516729" type="DEFAULT_VEHTYPE" speed="12.914069" pos="259.526268" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655707" y="-23.567208" angle="132.771502" type="DEFAULT_VEHTYPE" speed="12.865456" pos="252.212031" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657286" y="-23.560803" angle="133.726516" type="DEFAULT_VEHTYPE" speed="13.592704" pos="1.428137" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="30.00">
+        <vehicle id="0" x="-46.657344" y="-23.564058" angle="311.727550" type="DEFAULT_VEHTYPE" speed="13.553180" pos="28.043178" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652171" y="-23.559046" angle="60.350136" type="DEFAULT_VEHTYPE" speed="12.836097" pos="349.853018" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.015372" pos="23.515710" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654203" y="-23.565026" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.313415" pos="61.770293" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654953" y="-23.561469" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.762831" pos="35.849522" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659963" y="-23.560140" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.726166" pos="162.060642" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659776" y="-23.565048" angle="312.110129" type="DEFAULT_VEHTYPE" speed="12.960993" pos="56.763894" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651421" y="-23.563884" angle="311.662911" type="DEFAULT_VEHTYPE" speed="10.700960" pos="9.766505" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661997" y="-23.561646" angle="133.019139" type="DEFAULT_VEHTYPE" speed="13.569665" pos="140.364957" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649656" y="-23.563786" angle="131.310507" type="DEFAULT_VEHTYPE" speed="9.908344" pos="28.243553" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655795" y="-23.561366" angle="206.726220" type="DEFAULT_VEHTYPE" speed="13.663580" pos="110.592442" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653557" y="-23.566240" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.384598" pos="73.547683" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660289" y="-23.573135" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.770423" pos="89.558887" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654884" y="-23.562637" angle="309.784377" type="DEFAULT_VEHTYPE" speed="12.370368" pos="3.067752" lane="230628533#3_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649407" y="-23.567173" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.734381" pos="64.196735" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650181" y="-23.565506" angle="222.177728" type="DEFAULT_VEHTYPE" speed="10.798625" pos="44.500838" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651909" y="-23.560312" angle="218.458282" type="DEFAULT_VEHTYPE" speed="7.168606" pos="21.680662" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660775" y="-23.573626" angle="41.637963" type="DEFAULT_VEHTYPE" speed="5.870911" pos="15.924037" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.654029" y="-23.565170" angle="131.399927" type="DEFAULT_VEHTYPE" speed="10.943459" pos="2.348227" lane=":2308420508_1_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658489" y="-23.564751" angle="133.092083" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654524" y="-23.561836" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.647723" pos="95.656923" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.659081" y="-23.571905" angle="41.481921" type="DEFAULT_VEHTYPE" speed="13.748161" pos="273.274429" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655610" y="-23.567292" angle="132.771502" type="DEFAULT_VEHTYPE" speed="13.642577" pos="265.854608" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657222" y="-23.560861" angle="134.016478" type="DEFAULT_VEHTYPE" speed="9.092704" pos="10.520841" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="31.00">
+        <vehicle id="0" x="-46.657440" y="-23.563977" angle="311.727550" type="DEFAULT_VEHTYPE" speed="13.159562" pos="41.202740" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.652062" y="-23.558991" angle="60.350136" type="DEFAULT_VEHTYPE" speed="12.610258" pos="362.463277" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.012743" pos="23.528453" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654124" y="-23.565091" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.857324" pos="72.627618" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654855" y="-23.561552" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.588868" pos="49.438390" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659888" y="-23.560206" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.560040" pos="172.620682" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659871" y="-23.564967" angle="312.110129" type="DEFAULT_VEHTYPE" speed="13.212202" pos="69.976096" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651513" y="-23.563806" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.756067" pos="22.522572" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661904" y="-23.561732" angle="134.174305" type="DEFAULT_VEHTYPE" speed="13.489042" pos="153.853999" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649583" y="-23.563846" angle="131.310507" type="DEFAULT_VEHTYPE" speed="9.985561" pos="38.229114" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655854" y="-23.561476" angle="205.398235" type="DEFAULT_VEHTYPE" speed="13.512504" pos="124.104946" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653471" y="-23.566152" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.117815" pos="86.665497" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660199" y="-23.573044" angle="41.630710" type="DEFAULT_VEHTYPE" speed="13.679126" pos="103.238012" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654948" y="-23.562587" angle="309.421867" type="DEFAULT_VEHTYPE" speed="8.622110" pos="11.689862" lane="230628533#3_1" slope="0.000000"/>
+        <vehicle id="23" x="-46.649499" y="-23.567096" angle="311.290681" type="DEFAULT_VEHTYPE" speed="12.636190" pos="76.832925" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650263" y="-23.565588" angle="222.177728" type="DEFAULT_VEHTYPE" speed="12.348307" pos="56.849144" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.651966" y="-23.560376" angle="218.458282" type="DEFAULT_VEHTYPE" speed="9.250225" pos="30.930887" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660723" y="-23.573574" angle="41.686262" type="DEFAULT_VEHTYPE" speed="7.893551" pos="23.817588" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653957" y="-23.565230" angle="131.359307" type="DEFAULT_VEHTYPE" speed="9.975352" pos="6.123579" lane="426696421#1_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658479" y="-23.564761" angle="133.092083" type="DEFAULT_VEHTYPE" speed="1.470751" pos="6.570751" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654429" y="-23.561918" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.255895" pos="108.912818" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658992" y="-23.571814" angle="41.282483" type="DEFAULT_VEHTYPE" speed="13.587136" pos="286.861565" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655516" y="-23.567374" angle="132.771502" type="DEFAULT_VEHTYPE" speed="13.125421" pos="278.980029" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657190" y="-23.560890" angle="134.016478" type="DEFAULT_VEHTYPE" speed="4.592704" pos="15.113545" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="32.00">
+        <vehicle id="0" x="-46.657528" y="-23.563903" angle="311.727550" type="DEFAULT_VEHTYPE" speed="12.294772" pos="53.497512" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651945" y="-23.558931" angle="60.350136" type="DEFAULT_VEHTYPE" speed="13.645916" pos="376.109193" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000407" pos="23.528860" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.654049" y="-23.565154" angle="131.396956" type="DEFAULT_VEHTYPE" speed="10.336317" pos="82.963934" lane="426696421#0_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654762" y="-23.561632" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.967917" pos="62.406307" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659812" y="-23.560273" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.755495" pos="183.376177" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.659964" y="-23.564888" angle="312.110129" type="DEFAULT_VEHTYPE" speed="12.824618" pos="82.800714" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651609" y="-23.563726" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.227951" pos="35.750523" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661809" y="-23.561819" angle="134.174305" type="DEFAULT_VEHTYPE" speed="13.710931" pos="167.564930" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649503" y="-23.563913" angle="131.310507" type="DEFAULT_VEHTYPE" speed="11.016607" pos="49.245722" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655912" y="-23.561583" angle="205.398235" type="DEFAULT_VEHTYPE" speed="13.299875" pos="137.404822" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653382" y="-23.566061" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.659425" pos="100.324922" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660113" y="-23.572956" angle="41.470213" type="DEFAULT_VEHTYPE" speed="13.057966" pos="116.295979" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654980" y="-23.562559" angle="313.040616" type="DEFAULT_VEHTYPE" speed="4.471139" pos="1.251001" lane=":2021000708_4_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.649592" y="-23.567019" angle="311.290681" type="DEFAULT_VEHTYPE" speed="12.807577" pos="89.640502" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650350" y="-23.565675" angle="222.177728" type="DEFAULT_VEHTYPE" speed="13.068789" pos="69.917934" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.652032" y="-23.560451" angle="218.458282" type="DEFAULT_VEHTYPE" speed="10.711104" pos="41.641991" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660657" y="-23.573507" angle="41.686262" type="DEFAULT_VEHTYPE" speed="10.032254" pos="33.849841" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653879" y="-23.565295" angle="131.359307" type="DEFAULT_VEHTYPE" speed="10.669526" pos="16.793105" lane="426696421#1_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658451" y="-23.564785" angle="133.092083" type="DEFAULT_VEHTYPE" speed="3.904027" pos="10.474779" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647675" y="-23.562911" angle="220.871255" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654326" y="-23.561952" angle="69.944918" type="DEFAULT_VEHTYPE" speed="13.139573" pos="1.472392" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658906" y="-23.571725" angle="41.282483" type="DEFAULT_VEHTYPE" speed="13.160846" pos="300.022410" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655424" y="-23.567455" angle="132.771502" type="DEFAULT_VEHTYPE" speed="12.991645" pos="291.971674" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.329176" pos="15.442721" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="33.00">
+        <vehicle id="0" x="-46.657585" y="-23.563855" angle="311.727550" type="DEFAULT_VEHTYPE" speed="7.794772" pos="61.292284" lane="369467063#0_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651832" y="-23.558873" angle="60.350136" type="DEFAULT_VEHTYPE" speed="13.177966" pos="389.287159" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000138" pos="23.528999" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653974" y="-23.565216" angle="131.369766" type="DEFAULT_VEHTYPE" speed="10.306714" pos="3.810648" lane="426696421#1_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654672" y="-23.561710" angle="132.265008" type="DEFAULT_VEHTYPE" speed="12.613604" pos="75.019911" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659743" y="-23.560334" angle="133.126304" type="DEFAULT_VEHTYPE" speed="9.834756" pos="193.210932" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660057" y="-23.564808" angle="312.428497" type="DEFAULT_VEHTYPE" speed="13.026293" pos="95.827008" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651701" y="-23.563649" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.641779" pos="48.392302" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661714" y="-23.561906" angle="134.174305" type="DEFAULT_VEHTYPE" speed="13.624792" pos="181.189722" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649424" y="-23.563979" angle="131.310507" type="DEFAULT_VEHTYPE" speed="10.902581" pos="60.148302" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.655967" y="-23.561687" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.761215" pos="150.166036" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653310" y="-23.565987" angle="41.351025" type="DEFAULT_VEHTYPE" speed="10.936296" pos="111.261219" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.660030" y="-23.572871" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.708126" pos="129.004105" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654955" y="-23.562509" angle="32.381127" type="DEFAULT_VEHTYPE" speed="6.553578" pos="4.574579" lane=":2021000708_7_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.649685" y="-23.566943" angle="311.290681" type="DEFAULT_VEHTYPE" speed="12.660169" pos="102.300671" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650442" y="-23.565765" angle="222.177728" type="DEFAULT_VEHTYPE" speed="13.686778" pos="83.604711" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.652108" y="-23.560537" angle="218.458282" type="DEFAULT_VEHTYPE" speed="12.169519" pos="53.811510" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660574" y="-23.573423" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.592120" pos="46.441961" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653807" y="-23.565355" angle="131.397418" type="DEFAULT_VEHTYPE" speed="9.920219" pos="4.333324" lane=":2713422764_1_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658410" y="-23.564821" angle="133.092083" type="DEFAULT_VEHTYPE" speed="5.840194" pos="16.314972" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647687" y="-23.562923" angle="220.871255" type="DEFAULT_VEHTYPE" speed="1.756230" pos="6.856230" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654231" y="-23.561877" angle="48.582756" type="DEFAULT_VEHTYPE" speed="13.014972" pos="14.487363" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658819" y="-23.571635" angle="41.282483" type="DEFAULT_VEHTYPE" speed="13.400016" pos="313.422426" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655332" y="-23.567535" angle="132.710099" type="DEFAULT_VEHTYPE" speed="12.986714" pos="304.958388" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.021455" pos="15.464177" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="34.00">
+        <vehicle id="0" x="-46.657643" y="-23.563790" angle="326.218071" type="DEFAULT_VEHTYPE" speed="9.463696" pos="5.975980" lane=":60609753_2_0" slope="0.000000"/>
+        <vehicle id="1" x="-46.651712" y="-23.558816" angle="64.622426" type="DEFAULT_VEHTYPE" speed="13.748323" pos="2.145482" lane=":1944745397_0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000001" pos="23.528999" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653901" y="-23.565276" angle="131.359307" type="DEFAULT_VEHTYPE" speed="9.949756" pos="13.760404" lane="426696421#1_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654572" y="-23.561795" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.874026" pos="88.893937" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659670" y="-23.560399" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.310400" pos="203.521333" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660148" y="-23.564728" angle="313.002375" type="DEFAULT_VEHTYPE" speed="12.891774" pos="108.718781" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651800" y="-23.563565" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.721032" pos="62.113334" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661623" y="-23.561989" angle="134.174305" type="DEFAULT_VEHTYPE" speed="13.137216" pos="194.326938" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649344" y="-23.564045" angle="131.310507" type="DEFAULT_VEHTYPE" speed="10.923916" pos="71.072219" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656022" y="-23.561792" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.918864" pos="163.084900" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653262" y="-23.565938" angle="41.371593" type="DEFAULT_VEHTYPE" speed="7.463621" pos="2.074840" lane="426696410#0_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659944" y="-23.572784" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.967050" pos="141.971155" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654892" y="-23.562455" angle="47.031888" type="DEFAULT_VEHTYPE" speed="8.802747" pos="8.387326" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.649779" y="-23.566865" angle="311.290681" type="DEFAULT_VEHTYPE" speed="12.908407" pos="115.209079" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650528" y="-23.565851" angle="222.177728" type="DEFAULT_VEHTYPE" speed="12.974947" pos="96.579659" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.652190" y="-23.560630" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.366168" pos="67.177678" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660484" y="-23.573332" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.580463" pos="60.022424" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653727" y="-23.565422" angle="131.400306" type="DEFAULT_VEHTYPE" speed="11.067800" pos="9.201124" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658354" y="-23.564870" angle="133.092083" type="DEFAULT_VEHTYPE" speed="7.850649" pos="24.165621" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647710" y="-23.562947" angle="220.871255" type="DEFAULT_VEHTYPE" speed="3.570004" pos="10.426234" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654138" y="-23.561803" angle="48.582756" type="DEFAULT_VEHTYPE" speed="12.790220" pos="27.277583" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658731" y="-23.571545" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.405821" pos="326.828247" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655234" y="-23.567620" angle="132.710099" type="DEFAULT_VEHTYPE" speed="13.706049" pos="318.664437" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.013840" pos="15.478016" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="35.00">
+        <vehicle id="0" x="-46.657730" y="-23.563731" angle="280.553249" type="DEFAULT_VEHTYPE" speed="11.310588" pos="3.876568" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651682" y="-23.558921" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.454463" pos="5.779945" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000001" pos="23.529000" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653827" y="-23.565338" angle="131.372821" type="DEFAULT_VEHTYPE" speed="10.156345" pos="1.536749" lane=":2713422764_1_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654474" y="-23.561879" angle="132.265008" type="DEFAULT_VEHTYPE" speed="13.663894" pos="102.557832" lane="38630652#1_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659596" y="-23.560464" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.478680" pos="214.000013" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660242" y="-23.564646" angle="313.002375" type="DEFAULT_VEHTYPE" speed="13.152978" pos="121.871759" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651900" y="-23.563482" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.759174" pos="75.872508" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661533" y="-23.562072" angle="134.174305" type="DEFAULT_VEHTYPE" speed="12.914345" pos="207.241283" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649271" y="-23.564105" angle="131.310507" type="DEFAULT_VEHTYPE" speed="9.992548" pos="81.064767" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656078" y="-23.561897" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.981515" pos="176.066415" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653197" y="-23.565872" angle="41.333302" type="DEFAULT_VEHTYPE" speed="9.829235" pos="5.594076" lane=":142799349_1_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659855" y="-23.572693" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.582078" pos="155.553233" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654813" y="-23.562390" angle="47.746521" type="DEFAULT_VEHTYPE" speed="10.800382" pos="19.187708" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.649871" y="-23.566788" angle="311.290681" type="DEFAULT_VEHTYPE" speed="12.637506" pos="127.846585" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650616" y="-23.565938" angle="222.177728" type="DEFAULT_VEHTYPE" speed="13.172392" pos="109.752051" lane="27666905#2_0" slope="0.000000"/>
+        <vehicle id="26" x="-46.652271" y="-23.560721" angle="218.458282" type="DEFAULT_VEHTYPE" speed="12.996716" pos="80.174393" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660397" y="-23.573244" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.205285" pos="73.227709" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653648" y="-23.565487" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.823890" pos="20.025014" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658281" y="-23.564935" angle="133.092083" type="DEFAULT_VEHTYPE" speed="10.347428" pos="34.513050" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647746" y="-23.562985" angle="220.871255" type="DEFAULT_VEHTYPE" speed="5.622133" pos="16.048367" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654077" y="-23.561755" angle="48.582756" type="DEFAULT_VEHTYPE" speed="8.290220" pos="35.567804" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658648" y="-23.571461" angle="41.241444" type="DEFAULT_VEHTYPE" speed="12.613117" pos="339.441365" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655152" y="-23.567692" angle="132.710099" type="DEFAULT_VEHTYPE" speed="11.567633" pos="330.232070" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.000911" pos="15.478928" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="36.00">
+        <vehicle id="0" x="-46.657824" y="-23.563649" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.148389" pos="17.024957" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651685" y="-23.559037" angle="180.599685" type="DEFAULT_VEHTYPE" speed="12.922518" pos="18.702464" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000000" pos="23.529000" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653753" y="-23.565400" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.293077" pos="5.629826" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654374" y="-23.561963" angle="130.943893" type="DEFAULT_VEHTYPE" speed="13.819432" pos="0.937263" lane=":457566852_3_0" slope="0.000000"/>
+        <vehicle id="13" x="-46.659524" y="-23.560527" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.071258" pos="224.071271" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660331" y="-23.564567" angle="313.002375" type="DEFAULT_VEHTYPE" speed="12.639359" pos="134.511117" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.651998" y="-23.563400" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.491639" pos="89.364147" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661438" y="-23.562156" angle="132.768377" type="DEFAULT_VEHTYPE" speed="13.423211" pos="220.664495" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649194" y="-23.564169" angle="131.310507" type="DEFAULT_VEHTYPE" speed="10.618147" pos="91.682913" lane="38630645#2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656133" y="-23.562000" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.704829" pos="188.771244" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653121" y="-23.565793" angle="41.321754" type="DEFAULT_VEHTYPE" speed="11.767434" pos="0.161509" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659767" y="-23.572603" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.482307" pos="169.035540" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654715" y="-23.562310" angle="47.746521" type="DEFAULT_VEHTYPE" speed="13.369359" pos="32.557067" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.649968" y="-23.566708" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.365778" pos="141.212363" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650702" y="-23.566024" angle="222.321186" type="DEFAULT_VEHTYPE" speed="12.903153" pos="0.155203" lane=":1990934597_0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652352" y="-23.560814" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.157931" pos="93.332325" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660310" y="-23.573155" angle="41.686262" type="DEFAULT_VEHTYPE" speed="13.265208" pos="86.492917" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653568" y="-23.565553" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.926963" pos="30.951977" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658198" y="-23.565008" angle="133.092083" type="DEFAULT_VEHTYPE" speed="11.669585" pos="46.182635" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647795" y="-23.563036" angle="220.871255" type="DEFAULT_VEHTYPE" speed="7.539868" pos="23.588235" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.661073" y="-23.559159" angle="133.095404" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.654023" y="-23.561683" angle="30.569173" type="DEFAULT_VEHTYPE" speed="9.933584" pos="5.951388" lane=":344992859_3_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658561" y="-23.571371" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.275574" pos="352.716939" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655097" y="-23.567739" angle="132.710099" type="DEFAULT_VEHTYPE" speed="7.639403" pos="337.871473" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.000039" pos="15.478966" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="37.00">
+        <vehicle id="0" x="-46.657919" y="-23.563565" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.500078" pos="30.525035" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651688" y="-23.559162" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.803354" pos="32.505818" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000000" pos="23.529000" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653676" y="-23.565464" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.564577" pos="16.194403" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654266" y="-23.561905" angle="48.582756" type="DEFAULT_VEHTYPE" speed="13.864842" pos="9.662105" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659455" y="-23.560588" angle="133.126304" type="DEFAULT_VEHTYPE" speed="9.822277" pos="233.893548" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660427" y="-23.564483" angle="313.002375" type="DEFAULT_VEHTYPE" speed="13.452340" pos="147.963458" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652091" y="-23.563322" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.855373" pos="102.219520" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661345" y="-23.562237" angle="132.768377" type="DEFAULT_VEHTYPE" speed="13.162473" pos="233.826968" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649118" y="-23.564232" angle="131.586800" type="DEFAULT_VEHTYPE" speed="10.461328" pos="5.664241" lane=":1973766207_0_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656188" y="-23.562103" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.691864" pos="201.463108" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.653031" y="-23.565701" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.722135" pos="13.883644" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659684" y="-23.572519" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.603400" pos="181.638940" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654622" y="-23.562233" angle="47.746521" type="DEFAULT_VEHTYPE" speed="12.769647" pos="45.326714" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650067" y="-23.566626" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.571242" pos="154.783604" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650813" y="-23.566008" angle="311.283240" type="DEFAULT_VEHTYPE" speed="12.763194" pos="6.408398" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652430" y="-23.560902" angle="218.458282" type="DEFAULT_VEHTYPE" speed="12.659292" pos="105.991617" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660226" y="-23.573070" angle="41.686262" type="DEFAULT_VEHTYPE" speed="12.712378" pos="99.205295" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653490" y="-23.565618" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.730368" pos="41.682345" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658109" y="-23.565087" angle="133.092083" type="DEFAULT_VEHTYPE" speed="12.638934" pos="58.821569" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647861" y="-23.563104" angle="220.871255" type="DEFAULT_VEHTYPE" speed="10.107237" pos="33.695472" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.661061" y="-23.559170" angle="133.095404" type="DEFAULT_VEHTYPE" speed="1.689281" pos="6.789281" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="37" x="-46.657451" y="-23.565661" angle="133.349017" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653989" y="-23.561584" angle="16.921959" type="DEFAULT_VEHTYPE" speed="11.536542" pos="3.427930" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658479" y="-23.571286" angle="41.241444" type="DEFAULT_VEHTYPE" speed="12.664102" pos="365.381041" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.655025" y="-23.567744" angle="61.883252" type="DEFAULT_VEHTYPE" speed="9.199905" pos="1.521377" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.000029" pos="15.478995" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="38.00">
+        <vehicle id="0" x="-46.658013" y="-23.563483" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.148567" pos="43.673602" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651691" y="-23.559284" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.484974" pos="45.990792" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000000" pos="23.529000" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653595" y="-23.565531" angle="131.400306" type="DEFAULT_VEHTYPE" speed="11.078486" pos="27.272889" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654174" y="-23.561832" angle="48.582756" type="DEFAULT_VEHTYPE" speed="12.663371" pos="22.325476" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659384" y="-23.560651" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.082908" pos="243.976456" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660519" y="-23.564402" angle="313.002375" type="DEFAULT_VEHTYPE" speed="13.104920" pos="161.068378" lane="493367006#1_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652185" y="-23.563242" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.020428" pos="115.239948" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661254" y="-23.562316" angle="132.768377" type="DEFAULT_VEHTYPE" speed="12.739865" pos="246.566832" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649074" y="-23.564270" angle="132.178011" type="DEFAULT_VEHTYPE" speed="6.100982" pos="4.635223" lane="38630645#3_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656243" y="-23.562208" angle="205.398235" type="DEFAULT_VEHTYPE" speed="12.867637" pos="214.330745" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652943" y="-23.565611" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.399872" pos="27.283517" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659593" y="-23.572426" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.818148" pos="195.457088" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654528" y="-23.562156" angle="47.746521" type="DEFAULT_VEHTYPE" speed="12.814562" pos="58.141276" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650166" y="-23.566544" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.539848" pos="168.323452" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.650913" y="-23.565925" angle="311.283240" type="DEFAULT_VEHTYPE" speed="13.760368" pos="20.168765" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652512" y="-23.560995" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.270950" pos="119.262566" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660136" y="-23.572980" angle="41.484021" type="DEFAULT_VEHTYPE" speed="13.573669" pos="112.778963" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653413" y="-23.565683" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.649276" pos="52.331621" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.658018" y="-23.565167" angle="133.092083" type="DEFAULT_VEHTYPE" speed="12.837607" pos="71.659175" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.647938" y="-23.563184" angle="220.871255" type="DEFAULT_VEHTYPE" speed="11.860732" pos="45.556204" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.661033" y="-23.559195" angle="133.095404" type="DEFAULT_VEHTYPE" speed="4.011185" pos="10.800466" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="37" x="-46.657435" y="-23.565675" angle="133.349017" type="DEFAULT_VEHTYPE" speed="2.316883" pos="7.416883" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653941" y="-23.561470" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.608956" pos="17.036886" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658393" y="-23.571199" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.002888" pos="378.383929" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654957" y="-23.567673" angle="41.312441" type="DEFAULT_VEHTYPE" speed="10.527288" pos="12.048665" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.000004" pos="15.478999" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="39.00">
+        <vehicle id="0" x="-46.658104" y="-23.563403" angle="312.845934" type="DEFAULT_VEHTYPE" speed="12.830183" pos="56.503785" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651693" y="-23.559399" angle="180.599685" type="DEFAULT_VEHTYPE" speed="12.814986" pos="58.805778" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653855" y="-23.563726" angle="131.976798" type="DEFAULT_VEHTYPE" speed="0.000000" pos="23.529000" lane="230628536#3_1" slope="0.000000"/>
+        <vehicle id="11" x="-46.653520" y="-23.565593" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.328126" pos="37.601015" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654107" y="-23.561778" angle="48.582756" type="DEFAULT_VEHTYPE" speed="9.201426" pos="31.526902" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659314" y="-23.560713" angle="133.126304" type="DEFAULT_VEHTYPE" speed="9.838326" pos="253.814781" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660617" y="-23.564316" angle="313.038149" type="DEFAULT_VEHTYPE" speed="13.718284" pos="6.906662" lane=":60624540_3_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652277" y="-23.563165" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.747897" pos="127.987845" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661162" y="-23.562397" angle="132.768377" type="DEFAULT_VEHTYPE" speed="12.951841" pos="259.518673" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649039" y="-23.564330" angle="165.607024" type="DEFAULT_VEHTYPE" speed="8.372065" pos="4.397287" lane=":457566777_2_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656301" y="-23.562317" angle="205.398235" type="DEFAULT_VEHTYPE" speed="13.409538" pos="227.740282" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652856" y="-23.565523" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.193915" pos="40.477432" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659504" y="-23.572336" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.458964" pos="208.916053" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654429" y="-23.562076" angle="47.746521" type="DEFAULT_VEHTYPE" speed="13.442479" pos="71.583755" lane="184044492_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650265" y="-23.566462" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.604757" pos="181.928209" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651013" y="-23.565842" angle="311.283240" type="DEFAULT_VEHTYPE" speed="13.711375" pos="33.880140" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652597" y="-23.561092" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.794603" pos="133.057170" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.660051" y="-23.572893" angle="41.481346" type="DEFAULT_VEHTYPE" speed="12.993989" pos="125.772952" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653339" y="-23.565744" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.161855" pos="62.493476" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.657927" y="-23.565247" angle="133.092083" type="DEFAULT_VEHTYPE" speed="12.841834" pos="84.501010" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648023" y="-23.563273" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.117985" pos="58.674188" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660968" y="-23.559210" angle="133.095404" type="DEFAULT_VEHTYPE" speed="5.924435" pos="16.724902" lane="424211549#0_1" slope="0.000000"/>
+        <vehicle id="37" x="-46.657401" y="-23.565705" angle="133.349017" type="DEFAULT_VEHTYPE" speed="4.809358" pos="12.226241" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648321" y="-23.566406" angle="311.519144" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653885" y="-23.561360" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.356127" pos="30.393013" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658306" y="-23.571109" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.418433" pos="391.802362" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654872" y="-23.567586" angle="41.313395" type="DEFAULT_VEHTYPE" speed="12.918373" pos="24.967039" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657188" y="-23.560892" angle="134.016478" type="DEFAULT_VEHTYPE" speed="0.000000" pos="15.479000" lane="230628537#1_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="40.00">
+        <vehicle id="0" x="-46.658195" y="-23.563324" angle="312.845934" type="DEFAULT_VEHTYPE" speed="12.764981" pos="69.268766" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651696" y="-23.559522" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.573042" pos="72.378820" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653846" y="-23.563736" angle="133.463676" type="DEFAULT_VEHTYPE" speed="1.487093" pos="0.486093" lane=":1990911135_4_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653447" y="-23.565654" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.012625" pos="47.613639" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654071" y="-23.561749" angle="47.611609" type="DEFAULT_VEHTYPE" speed="4.931231" pos="36.458134" lane="504331803#0_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659243" y="-23.560776" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.102978" pos="263.917759" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660712" y="-23.564232" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.422747" pos="7.519409" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652370" y="-23.563087" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.766917" pos="140.754762" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.661064" y="-23.562483" angle="132.768377" type="DEFAULT_VEHTYPE" speed="13.791527" pos="273.310200" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649106" y="-23.564400" angle="220.765654" type="DEFAULT_VEHTYPE" speed="10.393343" pos="9.710631" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656357" y="-23.562422" angle="205.398235" type="DEFAULT_VEHTYPE" speed="13.000449" pos="240.740731" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652766" y="-23.565430" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.800779" pos="54.278211" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659420" y="-23.572250" angle="41.462581" type="DEFAULT_VEHTYPE" speed="12.851786" pos="221.767839" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654332" y="-23.561997" angle="48.027250" type="DEFAULT_VEHTYPE" speed="13.265599" pos="3.939354" lane=":457566852_0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650362" y="-23.566381" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.357808" pos="195.286018" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651109" y="-23.565762" angle="311.283240" type="DEFAULT_VEHTYPE" speed="13.194002" pos="47.074143" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652678" y="-23.561184" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.082294" pos="146.139464" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659963" y="-23.572803" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.441221" pos="139.214173" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653259" y="-23.565811" angle="131.420674" type="DEFAULT_VEHTYPE" speed="11.031870" pos="73.525345" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="30" x="-46.657831" y="-23.565333" angle="133.092083" type="DEFAULT_VEHTYPE" speed="13.661113" pos="98.162123" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648108" y="-23.563362" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.127062" pos="71.801250" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660909" y="-23.559263" angle="133.095404" type="DEFAULT_VEHTYPE" speed="8.473286" pos="25.198188" lane="424211549#0_1" slope="0.000000"/>
+        <vehicle id="37" x="-46.657351" y="-23.565750" angle="133.311358" type="DEFAULT_VEHTYPE" speed="7.129510" pos="19.355751" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648336" y="-23.566393" angle="311.519144" type="DEFAULT_VEHTYPE" speed="2.080539" pos="7.180539" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654362" y="-23.559210" angle="250.464939" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653830" y="-23.561250" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.355939" pos="43.748952" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658218" y="-23.571019" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.360956" pos="405.163318" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654787" y="-23.567500" angle="41.316748" type="DEFAULT_VEHTYPE" speed="12.929156" pos="37.896195" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657178" y="-23.560901" angle="133.962092" type="DEFAULT_VEHTYPE" speed="1.384063" pos="0.383062" lane=":1953466354_7_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="41.00">
+        <vehicle id="0" x="-46.658289" y="-23.563242" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.233248" pos="82.502013" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651699" y="-23.559642" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.267345" pos="85.646165" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653845" y="-23.563769" angle="168.559891" type="DEFAULT_VEHTYPE" speed="3.863731" pos="1.159824" lane=":1990911135_7_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653369" y="-23.565719" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.811955" pos="58.425595" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654036" y="-23.561704" angle="34.926576" type="DEFAULT_VEHTYPE" speed="6.265849" pos="3.173983" lane=":344992859_3_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659171" y="-23.560839" angle="133.126304" type="DEFAULT_VEHTYPE" speed="10.130294" pos="274.048054" lane="424211549#0_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660806" y="-23.564149" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.307027" pos="20.826436" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652468" y="-23.563005" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.548240" pos="154.303002" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.660974" y="-23.562561" angle="132.768377" type="DEFAULT_VEHTYPE" speed="12.605131" pos="285.915330" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649183" y="-23.564481" angle="220.765654" type="DEFAULT_VEHTYPE" speed="11.912792" pos="21.623422" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656409" y="-23.562533" angle="202.314079" type="DEFAULT_VEHTYPE" speed="13.379817" pos="254.120548" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652680" y="-23.565343" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.089252" pos="67.367463" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659333" y="-23.572161" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.222393" pos="234.990232" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654236" y="-23.561920" angle="48.569976" type="DEFAULT_VEHTYPE" speed="12.804982" pos="10.594336" lane="504331803#0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650458" y="-23.566302" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.161121" pos="208.447138" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651205" y="-23.565683" angle="311.283240" type="DEFAULT_VEHTYPE" speed="13.173235" pos="60.247378" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652763" y="-23.561279" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.684777" pos="159.824242" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659875" y="-23.572713" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.344639" pos="152.558811" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653177" y="-23.565849" angle="97.731555" type="DEFAULT_VEHTYPE" speed="10.427529" pos="4.332874" lane=":142799349_4_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.657733" y="-23.565419" angle="133.053385" type="DEFAULT_VEHTYPE" speed="13.830301" pos="111.992424" lane="230784028#3_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648192" y="-23.563449" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.881346" pos="84.682596" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660837" y="-23.559326" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.049942" pos="35.248129" lane="424211549#0_1" slope="0.000000"/>
+        <vehicle id="37" x="-46.657285" y="-23.565808" angle="133.237233" type="DEFAULT_VEHTYPE" speed="9.263631" pos="28.619383" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648369" y="-23.566366" angle="311.519144" type="DEFAULT_VEHTYPE" speed="4.522396" pos="11.702936" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654385" y="-23.559217" angle="250.464939" type="DEFAULT_VEHTYPE" speed="2.491304" pos="7.591304" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.653892" y="-23.565424" angle="221.458031" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653777" y="-23.561146" angle="24.309229" type="DEFAULT_VEHTYPE" speed="12.657007" pos="56.405959" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658133" y="-23.570931" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.065751" pos="418.229069" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654701" y="-23.567412" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.083796" pos="50.979991" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657155" y="-23.560922" angle="133.490768" type="DEFAULT_VEHTYPE" speed="3.320705" pos="3.703768" lane=":1953466354_7_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="42.00">
+        <vehicle id="0" x="-46.658383" y="-23.563159" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.308304" pos="95.810318" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651702" y="-23.559762" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.330354" pos="98.976520" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653875" y="-23.563810" angle="215.191199" type="DEFAULT_VEHTYPE" speed="5.594196" pos="1.764020" lane="230628542_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653295" y="-23.565780" angle="131.400306" type="DEFAULT_VEHTYPE" speed="10.103039" pos="68.528634" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.654007" y="-23.561635" angle="16.789532" type="DEFAULT_VEHTYPE" speed="8.360784" pos="11.534766" lane=":344992859_3_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659092" y="-23.560908" angle="132.598607" type="DEFAULT_VEHTYPE" speed="11.008228" pos="4.346281" lane="424211549#1_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660896" y="-23.564070" angle="313.008730" type="DEFAULT_VEHTYPE" speed="12.690320" pos="33.516756" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652567" y="-23.562922" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.653984" pos="167.956986" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.660900" y="-23.562626" angle="132.768377" type="DEFAULT_VEHTYPE" speed="10.457736" pos="296.373066" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649267" y="-23.564568" angle="220.765654" type="DEFAULT_VEHTYPE" speed="12.879878" pos="34.503300" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656458" y="-23.562638" angle="202.314079" type="DEFAULT_VEHTYPE" speed="12.673252" pos="266.793800" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652590" y="-23.565251" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.666188" pos="81.033651" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659250" y="-23.572077" angle="41.462581" type="DEFAULT_VEHTYPE" speed="12.632386" pos="247.622618" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654135" y="-23.561840" angle="48.569976" type="DEFAULT_VEHTYPE" speed="13.276739" pos="23.871076" lane="504331803#0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650554" y="-23.566222" angle="311.290681" type="DEFAULT_VEHTYPE" speed="13.205085" pos="221.652224" lane="231341013#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651306" y="-23.565600" angle="311.293684" type="DEFAULT_VEHTYPE" speed="13.803738" pos="4.801116" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652848" y="-23.561376" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.801733" pos="173.625974" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659788" y="-23.572625" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.273142" pos="165.831953" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653098" y="-23.565770" angle="41.346450" type="DEFAULT_VEHTYPE" speed="12.049469" pos="3.682343" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.657698" y="-23.565518" angle="201.716069" type="DEFAULT_VEHTYPE" speed="13.578892" pos="2.911316" lane="231355591#1_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648279" y="-23.563539" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.358553" pos="98.041149" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660763" y="-23.559392" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.490589" pos="45.738718" lane="424211549#0_1" slope="0.000000"/>
+        <vehicle id="37" x="-46.657202" y="-23.565882" angle="133.237233" type="DEFAULT_VEHTYPE" speed="11.851288" pos="40.470671" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648415" y="-23.566327" angle="311.519144" type="DEFAULT_VEHTYPE" speed="6.381491" pos="18.084426" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654429" y="-23.559231" angle="250.464939" type="DEFAULT_VEHTYPE" speed="4.733303" pos="12.324607" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.653905" y="-23.565437" angle="221.458031" type="DEFAULT_VEHTYPE" speed="1.969045" pos="7.069045" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653725" y="-23.561042" angle="24.309229" type="DEFAULT_VEHTYPE" speed="12.666626" pos="69.072585" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.658049" y="-23.570845" angle="41.263982" type="DEFAULT_VEHTYPE" speed="12.822702" pos="431.051771" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654616" y="-23.567324" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.107457" pos="64.087448" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657121" y="-23.560952" angle="133.306864" type="DEFAULT_VEHTYPE" speed="4.827246" pos="8.531013" lane=":1953466354_7_0" slope="0.000000"/>
+    </timestep>
+    <timestep time="43.00">
+        <vehicle id="0" x="-46.658480" y="-23.563074" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.650606" pos="109.460924" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651705" y="-23.559886" angle="180.599685" type="DEFAULT_VEHTYPE" speed="13.704997" pos="112.681517" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653925" y="-23.563864" angle="219.880775" type="DEFAULT_VEHTYPE" speed="7.803177" pos="1.827196" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653222" y="-23.565841" angle="131.448267" type="DEFAULT_VEHTYPE" speed="10.070203" pos="78.598837" lane="426696421#2_1" slope="0.000000"/>
+        <vehicle id="12" x="-46.653974" y="-23.561543" angle="17.369968" type="DEFAULT_VEHTYPE" speed="10.811765" pos="8.286531" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.659017" y="-23.560973" angle="132.580831" type="DEFAULT_VEHTYPE" speed="10.554666" pos="0.880948" lane=":60624571_3_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.660993" y="-23.563984" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.767732" pos="47.284488" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652660" y="-23.562844" angle="311.662911" type="DEFAULT_VEHTYPE" speed="12.818442" pos="180.775428" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.660857" y="-23.562663" angle="132.768377" type="DEFAULT_VEHTYPE" speed="5.957736" pos="302.330802" lane="230784028#0_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649351" y="-23.564656" angle="220.765654" type="DEFAULT_VEHTYPE" speed="12.990323" pos="47.493624" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656509" y="-23.562749" angle="202.314079" type="DEFAULT_VEHTYPE" speed="13.386114" pos="280.179914" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652503" y="-23.565161" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.334818" pos="94.368470" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659162" y="-23.571987" angle="41.508195" type="DEFAULT_VEHTYPE" speed="13.427126" pos="261.049743" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654065" y="-23.561784" angle="48.569976" type="DEFAULT_VEHTYPE" speed="9.373630" pos="33.244706" lane="504331803#0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650632" y="-23.566158" angle="311.271680" type="DEFAULT_VEHTYPE" speed="10.637826" pos="0.770049" lane="231341013#1_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651406" y="-23.565516" angle="311.291445" type="DEFAULT_VEHTYPE" speed="13.823171" pos="18.624287" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.652934" y="-23.561473" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.808876" pos="187.434850" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659699" y="-23.572534" angle="41.481346" type="DEFAULT_VEHTYPE" speed="13.497506" pos="179.329459" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.653013" y="-23.565683" angle="41.354994" type="DEFAULT_VEHTYPE" speed="12.917375" pos="16.599719" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.657763" y="-23.565618" angle="210.176054" type="DEFAULT_VEHTYPE" speed="12.855429" pos="5.546745" lane=":4350118091_0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648362" y="-23.563626" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.819259" pos="110.860407" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660693" y="-23.559454" angle="133.095404" type="DEFAULT_VEHTYPE" speed="9.956074" pos="55.694792" lane="424211549#0_1" slope="0.000000"/>
+        <vehicle id="37" x="-46.657112" y="-23.565962" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.692317" pos="53.162988" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648472" y="-23.566280" angle="311.513140" type="DEFAULT_VEHTYPE" speed="7.752521" pos="25.836947" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654491" y="-23.559250" angle="250.464939" type="DEFAULT_VEHTYPE" speed="6.658169" pos="18.982776" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.653931" y="-23.565464" angle="221.458031" type="DEFAULT_VEHTYPE" speed="4.003858" pos="11.072904" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647675" y="-23.562911" angle="220.871255" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653671" y="-23.560935" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.045787" pos="82.118372" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657962" y="-23.570756" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.207934" pos="444.259705" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654531" y="-23.567237" angle="41.316748" type="DEFAULT_VEHTYPE" speed="12.977407" pos="77.064855" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657071" y="-23.560996" angle="132.869557" type="DEFAULT_VEHTYPE" speed="7.063890" pos="2.914904" lane="230628537#2_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="44.00">
+        <vehicle id="0" x="-46.658574" y="-23.562993" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.132536" pos="122.593459" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651707" y="-23.559975" angle="180.599685" type="DEFAULT_VEHTYPE" speed="9.925688" pos="122.607205" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.653989" y="-23.563930" angle="221.304364" type="DEFAULT_VEHTYPE" speed="9.817279" pos="11.644475" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653141" y="-23.565814" angle="41.940765" type="DEFAULT_VEHTYPE" speed="10.650929" pos="4.629766" lane="426696410#1_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653922" y="-23.561433" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.197385" pos="21.483917" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658941" y="-23.561040" angle="132.616666" type="DEFAULT_VEHTYPE" speed="10.727474" pos="11.608421" lane=":60624571_3_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.661089" y="-23.563901" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.463174" pos="60.747662" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652756" y="-23.562763" angle="311.662911" type="DEFAULT_VEHTYPE" speed="13.290908" pos="194.066336" lane="71958447#3_2" slope="0.000000"/>
+        <vehicle id="17" x="-46.660804" y="-23.562710" angle="132.931380" type="DEFAULT_VEHTYPE" speed="7.558317" pos="4.629119" lane=":60624568_4_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649441" y="-23.564750" angle="220.765654" type="DEFAULT_VEHTYPE" speed="13.882763" pos="61.376387" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656558" y="-23.562856" angle="202.314079" type="DEFAULT_VEHTYPE" speed="12.829509" pos="293.009424" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652441" y="-23.565098" angle="41.354994" type="DEFAULT_VEHTYPE" speed="9.502793" pos="103.871263" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.659071" y="-23.571895" angle="41.471511" type="DEFAULT_VEHTYPE" speed="13.784911" pos="274.834654" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654032" y="-23.561751" angle="41.504699" type="DEFAULT_VEHTYPE" speed="4.873630" pos="38.118336" lane="504331803#0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650680" y="-23.566118" angle="311.269283" type="DEFAULT_VEHTYPE" speed="6.666280" pos="7.436329" lane="231341013#1_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651500" y="-23.565438" angle="311.291445" type="DEFAULT_VEHTYPE" speed="12.878543" pos="31.502830" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653015" y="-23.561565" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.222699" pos="200.657549" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659608" y="-23.572442" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.753986" pos="193.083445" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652922" y="-23.565590" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.884958" pos="30.484676" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.657842" y="-23.565707" angle="221.474496" type="DEFAULT_VEHTYPE" speed="12.776198" pos="5.632943" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648446" y="-23.563713" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.919498" pos="123.779905" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660593" y="-23.559500" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.885091" pos="66.579883" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.657018" y="-23.566045" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.313136" pos="66.476124" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648539" y="-23.566224" angle="311.513140" type="DEFAULT_VEHTYPE" speed="9.340015" pos="35.176962" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654571" y="-23.559275" angle="250.464939" type="DEFAULT_VEHTYPE" speed="8.646858" pos="27.629634" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.653968" y="-23.565503" angle="221.458031" type="DEFAULT_VEHTYPE" speed="5.717755" pos="16.790659" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647685" y="-23.562922" angle="220.871255" type="DEFAULT_VEHTYPE" speed="1.581438" pos="6.681438" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653953" y="-23.561580" angle="17.350778" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653614" y="-23.560823" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.655669" pos="95.774041" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658265" y="-23.566408" angle="40.429608" type="DEFAULT_VEHTYPE" speed="0.000000" pos="2.179000" lane="231355585#6_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657874" y="-23.570665" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.524429" pos="457.784134" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654441" y="-23.567145" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.650474" pos="90.715329" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.657009" y="-23.561049" angle="132.853405" type="DEFAULT_VEHTYPE" speed="8.633766" pos="2.428669" lane=":2081876314_0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="45.00">
+        <vehicle id="0" x="-46.658667" y="-23.562911" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.114524" pos="135.707983" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651709" y="-23.560030" angle="180.599685" type="DEFAULT_VEHTYPE" speed="6.119199" pos="128.726403" lane="15263136#0_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654069" y="-23.564011" angle="221.304364" type="DEFAULT_VEHTYPE" speed="12.165985" pos="23.810460" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.653061" y="-23.565732" angle="41.354994" type="DEFAULT_VEHTYPE" speed="12.345560" pos="9.275326" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653866" y="-23.561322" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.501388" pos="34.985305" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658863" y="-23.561108" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.940130" pos="9.618551" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.661182" y="-23.563818" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.165864" pos="73.913526" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652855" y="-23.562711" angle="275.593404" type="DEFAULT_VEHTYPE" speed="12.878014" pos="4.454350" lane=":151275580_5_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660738" y="-23.562768" angle="132.987879" type="DEFAULT_VEHTYPE" speed="9.309257" pos="1.128376" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649525" y="-23.564838" angle="220.765654" type="DEFAULT_VEHTYPE" speed="13.024970" pos="74.401357" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656611" y="-23.562972" angle="202.314079" type="DEFAULT_VEHTYPE" speed="13.878479" pos="306.887903" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652398" y="-23.565054" angle="41.318335" type="DEFAULT_VEHTYPE" speed="6.513971" pos="110.385234" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658985" y="-23.571806" angle="41.282483" type="DEFAULT_VEHTYPE" speed="13.225072" pos="288.059726" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654025" y="-23.561742" angle="38.684029" type="DEFAULT_VEHTYPE" speed="1.177695" pos="39.296031" lane="504331803#0_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650741" y="-23.566068" angle="311.304081" type="DEFAULT_VEHTYPE" speed="8.295573" pos="2.801901" lane=":1990934597_3_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651593" y="-23.565361" angle="311.291445" type="DEFAULT_VEHTYPE" speed="12.809135" pos="44.311964" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653095" y="-23.561656" angle="218.458282" type="DEFAULT_VEHTYPE" speed="12.969308" pos="213.626857" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659523" y="-23.572355" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.051218" pos="206.134664" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652837" y="-23.565503" angle="41.354994" type="DEFAULT_VEHTYPE" speed="12.970104" pos="43.454781" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.657930" y="-23.565796" angle="221.474496" type="DEFAULT_VEHTYPE" speed="13.380670" pos="19.013614" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648529" y="-23.563799" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.769815" pos="136.549720" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660519" y="-23.559566" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.485329" pos="77.065212" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656925" y="-23.566127" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.116788" pos="79.592912" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648625" y="-23.566152" angle="311.513140" type="DEFAULT_VEHTYPE" speed="11.832034" pos="47.008996" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654656" y="-23.559324" angle="225.000000" type="DEFAULT_VEHTYPE" speed="10.435991" pos="38.065625" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654023" y="-23.565558" angle="221.458031" type="DEFAULT_VEHTYPE" speed="8.311120" pos="25.101779" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647709" y="-23.562946" angle="220.871255" type="DEFAULT_VEHTYPE" speed="3.580214" pos="10.261653" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653946" y="-23.561559" angle="17.350778" type="DEFAULT_VEHTYPE" speed="2.381187" pos="7.481187" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653562" y="-23.560720" angle="24.309229" type="DEFAULT_VEHTYPE" speed="12.626336" pos="108.400377" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658250" y="-23.566392" angle="40.095005" type="DEFAULT_VEHTYPE" speed="2.363166" pos="1.362166" lane=":2070797828_1_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657784" y="-23.570573" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.754820" pos="471.538954" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654357" y="-23.567059" angle="41.316748" type="DEFAULT_VEHTYPE" speed="12.881137" pos="103.596466" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656935" y="-23.561115" angle="133.454672" type="DEFAULT_VEHTYPE" speed="10.461021" pos="7.799690" lane="230628537#3_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="46.00">
+        <vehicle id="0" x="-46.658763" y="-23.562827" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.487727" pos="149.195711" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651711" y="-23.560105" angle="180.967928" type="DEFAULT_VEHTYPE" speed="8.228294" pos="4.144698" lane=":861891067_1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654155" y="-23.564100" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.154688" pos="36.965148" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.652970" y="-23.565639" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.867075" pos="23.142401" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653812" y="-23.561215" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.128639" pos="48.113944" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658792" y="-23.561170" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.000963" pos="19.619514" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.661272" y="-23.563740" angle="313.008730" type="DEFAULT_VEHTYPE" speed="12.653488" pos="86.567014" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.652944" y="-23.562804" angle="220.045151" type="DEFAULT_VEHTYPE" speed="13.688940" pos="13.113290" lane="15263136#4_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660659" y="-23.562837" angle="133.137002" type="DEFAULT_VEHTYPE" speed="11.067765" pos="12.196141" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649614" y="-23.564931" angle="220.765654" type="DEFAULT_VEHTYPE" speed="13.721690" pos="88.123047" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656657" y="-23.563084" angle="196.520113" type="DEFAULT_VEHTYPE" speed="13.338759" pos="320.226662" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652385" y="-23.565040" angle="41.215426" type="DEFAULT_VEHTYPE" speed="2.013971" pos="112.399205" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658896" y="-23.571715" angle="41.282483" type="DEFAULT_VEHTYPE" speed="13.511610" pos="301.571336" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.654005" y="-23.561716" angle="34.791664" type="DEFAULT_VEHTYPE" speed="3.541175" pos="3.287206" lane=":344992859_3_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650814" y="-23.566007" angle="311.283240" type="DEFAULT_VEHTYPE" speed="10.010434" pos="6.512335" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651691" y="-23.565281" angle="311.291445" type="DEFAULT_VEHTYPE" speed="13.342150" pos="57.654115" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653173" y="-23.561745" angle="218.458282" type="DEFAULT_VEHTYPE" speed="12.624014" pos="226.250871" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659437" y="-23.572267" angle="41.462581" type="DEFAULT_VEHTYPE" speed="13.107664" pos="219.242328" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652751" y="-23.565415" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.157951" pos="56.612731" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.658015" y="-23.565883" angle="221.474496" type="DEFAULT_VEHTYPE" speed="12.926363" pos="31.939977" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648616" y="-23.563890" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.375712" pos="149.925432" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660447" y="-23.559630" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.276460" pos="87.341672" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656834" y="-23.566208" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.964698" pos="92.557610" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648721" y="-23.566072" angle="311.513140" type="DEFAULT_VEHTYPE" speed="13.137720" pos="60.146716" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654743" y="-23.559402" angle="225.000000" type="DEFAULT_VEHTYPE" speed="12.461392" pos="50.527018" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654088" y="-23.565625" angle="221.458031" type="DEFAULT_VEHTYPE" speed="9.966132" pos="35.067911" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647746" y="-23.562985" angle="220.871255" type="DEFAULT_VEHTYPE" speed="5.811107" pos="16.072760" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653932" y="-23.561524" angle="18.843993" type="DEFAULT_VEHTYPE" speed="4.154630" pos="11.635817" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="46" x="-46.658491" y="-23.564646" angle="42.899583" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="8578569#0_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653505" y="-23.560608" angle="24.431445" type="DEFAULT_VEHTYPE" speed="13.626063" pos="122.026439" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658222" y="-23.566362" angle="40.112026" type="DEFAULT_VEHTYPE" speed="4.415495" pos="5.777662" lane=":2070797828_1_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657696" y="-23.570483" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.341414" pos="484.880368" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654268" y="-23.566968" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.529269" pos="117.125735" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656847" y="-23.561194" angle="133.460415" type="DEFAULT_VEHTYPE" speed="12.506692" pos="4.846382" lane=":2352453447_0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="47.00">
+        <vehicle id="0" x="-46.658856" y="-23.562746" angle="312.845934" type="DEFAULT_VEHTYPE" speed="13.130229" pos="162.325939" lane="369467063#1_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651714" y="-23.560196" angle="181.066477" type="DEFAULT_VEHTYPE" speed="10.092233" pos="0.516931" lane="15263136#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654245" y="-23.564192" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.725882" pos="50.691030" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.652883" y="-23.565550" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.242578" pos="36.384978" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653756" y="-23.561105" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.339590" pos="61.453534" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658717" y="-23.561237" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.618238" pos="30.237752" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="15" x="-46.661369" y="-23.563654" angle="313.008730" type="DEFAULT_VEHTYPE" speed="13.733942" pos="100.300955" lane="493367006#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.653028" y="-23.562895" angle="220.045151" type="DEFAULT_VEHTYPE" speed="13.206359" pos="26.319650" lane="15263136#4_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660563" y="-23.562922" angle="133.137002" type="DEFAULT_VEHTYPE" speed="13.604818" pos="25.800959" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649701" y="-23.565022" angle="220.765654" type="DEFAULT_VEHTYPE" speed="13.392962" pos="101.516009" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656697" y="-23.563203" angle="196.520113" type="DEFAULT_VEHTYPE" speed="13.731831" pos="333.958493" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652385" y="-23.565040" angle="41.215026" type="DEFAULT_VEHTYPE" speed="0.007838" pos="112.407043" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658812" y="-23.571629" angle="41.282483" type="DEFAULT_VEHTYPE" speed="12.842980" pos="314.414316" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.653985" y="-23.561675" angle="23.993183" type="DEFAULT_VEHTYPE" speed="4.872430" pos="8.159636" lane=":344992859_3_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650897" y="-23.565938" angle="311.283240" type="DEFAULT_VEHTYPE" speed="11.419308" pos="17.931643" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651791" y="-23.565198" angle="311.291445" type="DEFAULT_VEHTYPE" speed="13.719943" pos="71.374058" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653255" y="-23.561837" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.192873" pos="239.443745" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659352" y="-23.572180" angle="41.462581" type="DEFAULT_VEHTYPE" speed="12.928021" pos="232.170349" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652663" y="-23.565325" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.398800" pos="70.011531" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.658101" y="-23.565971" angle="221.474496" type="DEFAULT_VEHTYPE" speed="13.135841" pos="45.075818" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648700" y="-23.563978" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.036874" pos="162.962306" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660374" y="-23.559694" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.317577" pos="97.659249" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656744" y="-23.566288" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.753248" pos="105.310858" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648817" y="-23.565992" angle="311.513140" type="DEFAULT_VEHTYPE" speed="13.255857" pos="73.402573" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654838" y="-23.559488" angle="225.000000" type="DEFAULT_VEHTYPE" speed="13.622672" pos="64.149690" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654158" y="-23.565696" angle="221.458031" type="DEFAULT_VEHTYPE" speed="10.551846" pos="45.619756" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647795" y="-23.563036" angle="220.871255" type="DEFAULT_VEHTYPE" speed="7.511820" pos="23.584579" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653909" y="-23.561477" angle="24.313485" type="DEFAULT_VEHTYPE" speed="5.773572" pos="17.409389" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="46" x="-46.658498" y="-23.564609" angle="42.902605" type="DEFAULT_VEHTYPE" speed="2.552825" pos="7.652825" lane="8578569#0_1" slope="0.000000"/>
+        <vehicle id="47" x="-46.656648" y="-23.562857" angle="43.785953" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="8578569#3_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653441" y="-23.560506" angle="29.551688" type="DEFAULT_VEHTYPE" speed="12.938460" pos="134.964899" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658177" y="-23.566315" angle="40.412045" type="DEFAULT_VEHTYPE" speed="6.931816" pos="6.459478" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657609" y="-23.570394" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.347853" pos="498.228221" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654178" y="-23.566876" angle="41.316748" type="DEFAULT_VEHTYPE" speed="13.731627" pos="130.857362" lane="359790121#2_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656753" y="-23.561278" angle="133.412533" type="DEFAULT_VEHTYPE" speed="13.476217" pos="13.322599" lane="230628537#4_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="48.00">
+        <vehicle id="0" x="-46.658955" y="-23.562715" angle="258.508507" type="DEFAULT_VEHTYPE" speed="11.098306" pos="1.404246" lane="230628519#4_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651718" y="-23.560309" angle="181.262281" type="DEFAULT_VEHTYPE" speed="12.503996" pos="13.020927" lane="15263136#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654333" y="-23.564282" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.391819" pos="64.082849" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.652798" y="-23.565463" angle="41.354994" type="DEFAULT_VEHTYPE" speed="12.965084" pos="49.350062" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653704" y="-23.561001" angle="24.309229" type="DEFAULT_VEHTYPE" speed="12.632915" pos="74.086450" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658643" y="-23.561302" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.544306" pos="40.782058" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.653110" y="-23.562983" angle="220.045151" type="DEFAULT_VEHTYPE" speed="12.850083" pos="39.169733" lane="15263136#4_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660473" y="-23.563001" angle="133.137002" type="DEFAULT_VEHTYPE" speed="12.721058" pos="38.522017" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649759" y="-23.565082" angle="220.765654" type="DEFAULT_VEHTYPE" speed="8.892962" pos="110.408971" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656737" y="-23.563320" angle="196.520113" type="DEFAULT_VEHTYPE" speed="13.598580" pos="347.557073" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652385" y="-23.565040" angle="41.214954" type="DEFAULT_VEHTYPE" speed="0.001405" pos="112.408448" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658722" y="-23.571536" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.783158" pos="328.197474" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.653966" y="-23.561614" angle="16.039311" type="DEFAULT_VEHTYPE" speed="6.932340" pos="1.031977" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.650990" y="-23.565861" angle="311.283240" type="DEFAULT_VEHTYPE" speed="12.840840" pos="30.772483" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="24" x="-46.651891" y="-23.565114" angle="311.291445" type="DEFAULT_VEHTYPE" speed="13.821065" pos="85.195123" lane="230628530#1_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653340" y="-23.561933" angle="218.458282" type="DEFAULT_VEHTYPE" speed="13.736058" pos="253.179803" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659267" y="-23.572094" angle="41.462581" type="DEFAULT_VEHTYPE" speed="12.862433" pos="245.032782" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652572" y="-23.565232" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.867342" pos="83.878873" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.658187" y="-23.566058" angle="221.474496" type="DEFAULT_VEHTYPE" speed="13.032757" pos="58.108575" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648789" y="-23.564071" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.705410" pos="176.667716" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660298" y="-23.559761" angle="133.095404" type="DEFAULT_VEHTYPE" speed="10.733309" pos="108.392559" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656654" y="-23.566368" angle="133.237233" type="DEFAULT_VEHTYPE" speed="12.694174" pos="118.005032" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.648909" y="-23.565915" angle="311.513140" type="DEFAULT_VEHTYPE" speed="12.731252" pos="86.133825" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.654930" y="-23.559572" angle="224.741383" type="DEFAULT_VEHTYPE" speed="13.189013" pos="77.338703" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654228" y="-23.565768" angle="221.458031" type="DEFAULT_VEHTYPE" speed="10.734589" pos="56.354345" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647858" y="-23.563101" angle="220.871255" type="DEFAULT_VEHTYPE" speed="9.694913" pos="33.279492" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653876" y="-23.561412" angle="24.313485" type="DEFAULT_VEHTYPE" speed="8.005139" pos="25.414527" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="46" x="-46.658472" y="-23.564584" angle="42.902605" type="DEFAULT_VEHTYPE" speed="3.875483" pos="11.528309" lane="8578569#0_1" slope="0.000000"/>
+        <vehicle id="47" x="-46.656635" y="-23.562845" angle="43.785953" type="DEFAULT_VEHTYPE" speed="1.867257" pos="6.967257" lane="8578569#3_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653378" y="-23.560407" angle="29.551688" type="DEFAULT_VEHTYPE" speed="12.703793" pos="147.668692" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658119" y="-23.566253" angle="40.412045" type="DEFAULT_VEHTYPE" speed="9.067623" pos="15.527101" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657519" y="-23.570301" angle="41.263982" type="DEFAULT_VEHTYPE" speed="13.794997" pos="512.023218" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654094" y="-23.566790" angle="41.320503" type="DEFAULT_VEHTYPE" speed="12.795893" pos="1.133255" lane=":151275042_3_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656658" y="-23.561363" angle="133.434377" type="DEFAULT_VEHTYPE" speed="13.449704" pos="2.272303" lane=":2081876316_0_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="49.00">
+        <vehicle id="0" x="-46.659027" y="-23.562784" angle="223.047455" type="DEFAULT_VEHTYPE" speed="10.583207" pos="11.987453" lane="230628519#4_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651722" y="-23.560433" angle="181.262281" type="DEFAULT_VEHTYPE" speed="13.832475" pos="26.853402" lane="15263136#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654418" y="-23.564369" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.009354" pos="77.092203" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.652708" y="-23.565371" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.737010" pos="63.087072" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653648" y="-23.560891" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.418582" pos="87.505031" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658566" y="-23.561370" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.849460" pos="51.631518" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.653194" y="-23.563072" angle="220.045151" type="DEFAULT_VEHTYPE" speed="13.108419" pos="52.278152" lane="15263136#4_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660383" y="-23.563081" angle="133.137002" type="DEFAULT_VEHTYPE" speed="12.806202" pos="51.328219" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649787" y="-23.565112" angle="220.765654" type="DEFAULT_VEHTYPE" speed="4.392962" pos="114.801934" lane="27666905#1_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656776" y="-23.563438" angle="196.520113" type="DEFAULT_VEHTYPE" speed="13.641686" pos="361.198759" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652385" y="-23.565040" angle="41.214932" type="DEFAULT_VEHTYPE" speed="0.000421" pos="112.408869" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658635" y="-23.571447" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.257091" pos="341.454565" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.653940" y="-23.561541" angle="17.350778" type="DEFAULT_VEHTYPE" speed="8.578175" pos="9.610151" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.651085" y="-23.565782" angle="311.283240" type="DEFAULT_VEHTYPE" speed="13.000198" pos="43.772681" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653400" y="-23.562001" angle="218.458282" type="DEFAULT_VEHTYPE" speed="9.660658" pos="262.840460" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659179" y="-23.572005" angle="41.516729" type="DEFAULT_VEHTYPE" speed="13.338579" pos="258.371361" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652504" y="-23.565162" angle="41.354994" type="DEFAULT_VEHTYPE" speed="10.358950" pos="94.237824" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.658270" y="-23.566143" angle="221.583451" type="DEFAULT_VEHTYPE" speed="12.615510" pos="70.724086" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648873" y="-23.564158" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.873172" pos="189.540888" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660219" y="-23.559831" angle="133.086214" type="DEFAULT_VEHTYPE" speed="11.082346" pos="119.474905" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656557" y="-23.566454" angle="133.237233" type="DEFAULT_VEHTYPE" speed="13.776023" pos="131.781055" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.649004" y="-23.565835" angle="311.513140" type="DEFAULT_VEHTYPE" speed="13.067298" pos="99.201124" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.655027" y="-23.559659" angle="224.741383" type="DEFAULT_VEHTYPE" speed="13.810304" pos="91.149007" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654295" y="-23.565836" angle="221.458031" type="DEFAULT_VEHTYPE" speed="10.195019" pos="66.549364" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.647938" y="-23.563184" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.235981" pos="45.515473" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653834" y="-23.561330" angle="24.313485" type="DEFAULT_VEHTYPE" speed="10.013546" pos="35.428073" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="46" x="-46.658459" y="-23.564528" angle="42.902605" type="DEFAULT_VEHTYPE" speed="5.387506" pos="16.915814" lane="8578569#0_2" slope="0.000000"/>
+        <vehicle id="47" x="-46.656606" y="-23.562819" angle="43.785953" type="DEFAULT_VEHTYPE" speed="4.156348" pos="11.123605" lane="8578569#3_0" slope="0.000000"/>
+        <vehicle id="49" x="-46.659003" y="-23.562719" angle="223.047455" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="230628519#4_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653313" y="-23.560304" angle="29.551688" type="DEFAULT_VEHTYPE" speed="13.138645" pos="160.807337" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="6" x="-46.658051" y="-23.566181" angle="40.412045" type="DEFAULT_VEHTYPE" speed="10.557925" pos="26.085026" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657432" y="-23.570213" angle="41.510466" type="DEFAULT_VEHTYPE" speed="13.228966" pos="525.252185" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.654004" y="-23.566697" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.752630" pos="5.385885" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656568" y="-23.561444" angle="133.410139" type="DEFAULT_VEHTYPE" speed="12.843890" pos="10.116193" lane="230628537#5_1" slope="0.000000"/>
+    </timestep>
+    <timestep time="50.00">
+        <vehicle id="0" x="-46.659097" y="-23.562852" angle="223.047455" type="DEFAULT_VEHTYPE" speed="10.332606" pos="22.320059" lane="230628519#4_1" slope="0.000000"/>
+        <vehicle id="1" x="-46.651727" y="-23.560556" angle="181.262281" type="DEFAULT_VEHTYPE" speed="13.591615" pos="40.445017" lane="15263136#1_0" slope="0.000000"/>
+        <vehicle id="10" x="-46.654504" y="-23.564458" angle="221.304364" type="DEFAULT_VEHTYPE" speed="13.209159" pos="90.301362" lane="426696443_0" slope="0.000000"/>
+        <vehicle id="11" x="-46.652620" y="-23.565281" angle="41.354994" type="DEFAULT_VEHTYPE" speed="13.460661" pos="76.547734" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="12" x="-46.653593" y="-23.560781" angle="24.309229" type="DEFAULT_VEHTYPE" speed="13.445815" pos="100.950846" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="13" x="-46.658493" y="-23.561435" angle="133.112591" type="DEFAULT_VEHTYPE" speed="10.303308" pos="61.934825" lane="424211549#2_0" slope="0.000000"/>
+        <vehicle id="16" x="-46.653276" y="-23.563161" angle="220.045151" type="DEFAULT_VEHTYPE" speed="12.893422" pos="65.171574" lane="15263136#4_0" slope="0.000000"/>
+        <vehicle id="17" x="-46.660287" y="-23.563166" angle="133.137002" type="DEFAULT_VEHTYPE" speed="13.557564" pos="64.885784" lane="230784028#1_0" slope="0.000000"/>
+        <vehicle id="18" x="-46.649835" y="-23.565133" angle="248.954777" type="DEFAULT_VEHTYPE" speed="6.031071" pos="4.003005" lane=":1990934596_0_0" slope="0.000000"/>
+        <vehicle id="19" x="-46.656817" y="-23.563555" angle="197.585067" type="DEFAULT_VEHTYPE" speed="13.605822" pos="374.804581" lane="72767347_0" slope="0.000000"/>
+        <vehicle id="2" x="-46.652385" y="-23.565040" angle="41.214926" type="DEFAULT_VEHTYPE" speed="0.000120" pos="112.408988" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="21" x="-46.658545" y="-23.571355" angle="41.241444" type="DEFAULT_VEHTYPE" speed="13.739410" pos="355.193976" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="22" x="-46.653895" y="-23.561450" angle="24.313485" type="DEFAULT_VEHTYPE" speed="11.071536" pos="20.681687" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="23" x="-46.651179" y="-23.565704" angle="311.283240" type="DEFAULT_VEHTYPE" speed="12.923964" pos="56.696646" lane="230628530#0_1" slope="0.000000"/>
+        <vehicle id="26" x="-46.653434" y="-23.562040" angle="218.458282" type="DEFAULT_VEHTYPE" speed="5.548940" pos="268.389400" lane="72614053_0" slope="0.000000"/>
+        <vehicle id="27" x="-46.659092" y="-23.571915" angle="41.481921" type="DEFAULT_VEHTYPE" speed="13.367660" pos="271.739021" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="3" x="-46.652462" y="-23.565120" angle="41.354994" type="DEFAULT_VEHTYPE" speed="6.331440" pos="100.569263" lane="426696411_0" slope="0.000000"/>
+        <vehicle id="30" x="-46.658353" y="-23.566226" angle="221.815719" type="DEFAULT_VEHTYPE" speed="12.609349" pos="83.333434" lane="474493463#0_0" slope="0.000000"/>
+        <vehicle id="32" x="-46.648962" y="-23.564250" angle="220.871255" type="DEFAULT_VEHTYPE" speed="13.661825" pos="203.202713" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="36" x="-46.660142" y="-23.559899" angle="133.095466" type="DEFAULT_VEHTYPE" speed="10.888286" pos="130.363191" lane="424211549#0_2" slope="0.000000"/>
+        <vehicle id="37" x="-46.656463" y="-23.566537" angle="133.208782" type="DEFAULT_VEHTYPE" speed="13.322512" pos="145.103567" lane="426696415_0" slope="0.000000"/>
+        <vehicle id="39" x="-46.649098" y="-23.565757" angle="311.513140" type="DEFAULT_VEHTYPE" speed="12.856183" pos="112.057307" lane="71958447#0_0" slope="0.000000"/>
+        <vehicle id="40" x="-46.655121" y="-23.559745" angle="224.730894" type="DEFAULT_VEHTYPE" speed="13.529626" pos="104.678633" lane="38630650#0_0" slope="0.000000"/>
+        <vehicle id="41" x="-46.654360" y="-23.565902" angle="221.458031" type="DEFAULT_VEHTYPE" speed="9.906357" pos="76.455721" lane="265726446_0" slope="0.000000"/>
+        <vehicle id="43" x="-46.648021" y="-23.563271" angle="220.871255" type="DEFAULT_VEHTYPE" speed="12.911190" pos="58.426663" lane="27666905#0_0" slope="0.000000"/>
+        <vehicle id="44" x="-46.653786" y="-23.561235" angle="24.313485" type="DEFAULT_VEHTYPE" speed="11.634792" pos="47.062866" lane="504331803#1_0" slope="0.000000"/>
+        <vehicle id="46" x="-46.658405" y="-23.564476" angle="42.902605" type="DEFAULT_VEHTYPE" speed="7.965599" pos="24.881413" lane="8578569#0_2" slope="0.000000"/>
+        <vehicle id="47" x="-46.656568" y="-23.562783" angle="43.785953" type="DEFAULT_VEHTYPE" speed="5.538076" pos="16.661681" lane="8578569#3_0" slope="0.000000"/>
+        <vehicle id="49" x="-46.659013" y="-23.562728" angle="223.047455" type="DEFAULT_VEHTYPE" speed="1.400709" pos="6.500709" lane="230628519#4_0" slope="0.000000"/>
+        <vehicle id="5" x="-46.653248" y="-23.560202" angle="30.048323" type="DEFAULT_VEHTYPE" speed="13.044239" pos="173.851575" lane="504331803#1_1" slope="0.000000"/>
+        <vehicle id="50" x="-46.657166" y="-23.564536" angle="194.681360" type="DEFAULT_VEHTYPE" speed="0.000000" pos="5.100000" lane="38630341_0" slope="0.000000"/>
+        <vehicle id="6" x="-46.657967" y="-23.566092" angle="40.412045" type="DEFAULT_VEHTYPE" speed="13.087238" pos="39.172263" lane="231355593#0_0" slope="0.000000"/>
+        <vehicle id="7" x="-46.657345" y="-23.570124" angle="41.416726" type="DEFAULT_VEHTYPE" speed="13.174103" pos="538.426288" lane="359790121#0_0" slope="0.000000"/>
+        <vehicle id="8" x="-46.653917" y="-23.566609" angle="41.351025" type="DEFAULT_VEHTYPE" speed="13.253961" pos="18.639846" lane="359790121#3_0" slope="0.000000"/>
+        <vehicle id="9" x="-46.656470" y="-23.561531" angle="133.410139" type="DEFAULT_VEHTYPE" speed="13.877093" pos="23.993286" lane="230628537#5_1" slope="0.000000"/>
+    </timestep>
+</fcd-export>

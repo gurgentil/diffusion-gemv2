@@ -1,6 +1,6 @@
 % RUNSIMULATION Runs the simulation. 
 %   Loads the settings from simSettings.m. 
-%   Saves the simulation output to .mat and .csv files. 
+%   Saves the simulation output to .mat and .csv files.
 %   Generates Google Earth Visualization.
 %   For details on variables, see simSettings.m and simMain.m
 %

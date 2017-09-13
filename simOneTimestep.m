@@ -55,30 +55,53 @@ if isempty(commPairArray) && isempty(commPairArrayV2I)
             tic
             communicationPairs = rangesearch...
                 (vehicleMidpoints,vehicleMidpoints,commRange);
-            % Get a given number of random communication pairs
-            communicationPairs = commPairs.getRandCommPairs...
-                (communicationPairs,numCommPairs);
+            if verbose
+                fprintf(['Matlab rangesearch command takes %f seconds '...
+                    'to map the V2V communication pairs.\n'],toc);
+            end
         else
             communicationPairs = [];
         end
         % Find V2I (RSU-vehicle) comm. pairs
         if ~isempty(RSUs) && numCommPairsV2I>0
             tic
-            communicationPairsV2IRS = rangesearch...
+            communicationPairsV2I = rangesearch...
                 (RSUs(:,[2 3]),vehicleMidpoints,commRange);
-            % Get a given number of random communication pairs
-            communicationPairsV2I = commPairs.getRandCommPairs...
-                (communicationPairsV2IRS,numCommPairsV2I,'V2I');
-            communicationPairsV2I = fliplr(communicationPairsV2I);
+            if verbose
+                fprintf(['Matlab rangesearch command takes %f seconds '...
+                    'to map the V2I communication pairs.\n'],toc);
+            end
         else
             communicationPairsV2I = [];
         end
     else
-        % 'rangesearch' not found
-        fprintf('function `rangesearch` is not available');
-        return        
+        % Use the much slower function for getting all communicating
+        % vehicle pairs within commRange
+        if numCommPairs>0
+            communicationPairs = commPairs.mapCommPairs...
+                (vehicleMidpoints,commRange,verbose);
+        else
+            communicationPairs = [];
+        end
+        if ~isempty(RSUs) && numCommPairsV2I>0
+            communicationPairsV2I = commPairs.mapCommPairs...
+                (vehicleMidpoints,commRange,verbose,RSUs(:,[2 3]));
+        else
+            communicationPairsV2I = [];
+        end
     end
-    
+    % Get a given number of random communication pairs
+    if numCommPairs>0
+        communicationPairs = commPairs.getRandCommPairs...
+            (communicationPairs,numCommPairs);
+    end
+    if ~isempty(RSUs) && numCommPairsV2I>0
+        communicationPairsV2I = commPairs.getRandCommPairs...
+            (communicationPairsV2I,numCommPairsV2I,'V2I');
+        if exist('rangesearch') == 5 || exist('rangesearch') == 2
+            communicationPairsV2I = fliplr(communicationPairsV2I);
+        end
+    end
     % NB: Depending on maximum communication ranges, there might be no
     % communication pairs for the current timestep
     if isempty(communicationPairs)
@@ -419,19 +442,4 @@ if strcmpi(V2XNames{ii},'v2i')
     V2XDataTimestep.(V2XNames{ii}).largeScalePwrI2V = ...
         largeScalePwr - txPower + RSUPower;
 end
-end
-
-
-
-
-%% DIRECTED DIFFUSION
-
-% Send packets from RSU to vehicle
-
-
-
-
-
-
-
 end
