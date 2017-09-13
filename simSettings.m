@@ -6,7 +6,7 @@
 % Copyright (c) 2014, Mate Boban
 
 %% Names of link types (supported: V2V and V2I)
-V2XNames = {'V2V'};
+V2XNames = {'V2I'};
 
 %% Scenario: Avenida Paulista
 
@@ -17,7 +17,7 @@ staticFile = 'inputPolygon/avenidaPaulista.osm';
 % [minlon,minlat,maxlon,maxlat] or [-Inf,-Inf,Inf,Inf];
 bBoxVehicles = [-46.6595500,-23.5664000,-46.6486500,-23.5606600];
 % [RSU_ID|Latitude|Longitude|Height(m)|TxPower(dBm)] or empty string
-RSUFile = 'inputRSU/RSULocations-2-4-5-6-7-8-9.txt';
+RSUFile = 'inputRSU/avenidaPaulistaRSUs.txt';
 
 %%
 % Load the file containing outlines of foliage. If foliage is contained in
