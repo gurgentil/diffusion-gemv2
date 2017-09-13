@@ -447,7 +447,7 @@ end
 
 %para cada veiculo
     %se há interesse na cache de par de comunicação
-        %traz interesse para cache do veiculo
+        %traz interesse para cache do v
 
 %para cada RSU
     %para cada interesse

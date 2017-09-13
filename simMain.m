@@ -185,6 +185,8 @@ for kk = 1:numTimesteps
             V2XData.(V2XNames{ii}) = [];
         end
     end
+    fprintf('*********************************************************\n');
     fprintf('Time-step: %i\n',kk);
+    fprintf('*********************************************************\n');
 end
 end
