@@ -444,21 +444,60 @@ if strcmpi(V2XNames{ii},'v2i')
 end
 end
 
+%% Directed Diffusion
+% https://sarwiki.informatik.hu-berlin.de/Directed_Diffusion
 
-%para cada veiculo
-    %se há interesse na cache de par de comunicação
-        %traz interesse para cache do veiculo
 
-%para cada RSU
-    %para cada interesse
-       %se expiresAt >= timestep
-            %deleta interesse
-       %senao
-            %timestamp = timestep
-    %se cache de interesses estiver vazia
-        %cria interesse(tempo e range)
-       
-       
+% COMO SABER O TIMESTEP ATUAL?
+
+% todos os nós de veículos participantes da comunicaão naquele timestep
+RxNodes = unique(communicationPairs(:, 2));
+% todos os nós das RSUs participantes da comunicação naquele timestep
+sinks = unique(communicationPairs(:, 1));
+
+% arquivo para guardar todos interesses dos veiculos [ID_VEH, ID_INTEREST]
+vehCache = dlmread('interests/vehCache.m');
+% arquivo para guardar todos interesses gerados pelas RSUs [ID_VEH, ID_RSU]
+sinkCache = dlmread('interests/sinkCache.m');
+% arquivo para guardar pares de atributos dos interesses
+% struct com velocidade definida no arquivo de RSU, e timestamp, duracao, intervalo, 
+% rect, type, etc.
+interests = dlmread('interests/interests.m');
+
+% para cada RxNodes
+    % se interesse na cache que combina com seus pares de comunicação
+        % copia/traz interesse para cache do veiculo
+
+if ~isempty(sinkCache)
+    % para cada interesse na cache de RSU
+        % se expiresAt > timestep então
+            % remove interesse
+        % senao
+            % refresh/timestamp = timestep
+        % fimse
+    % fimpara
     
+    % para cada sink
+    for ss=1:length(sinks)
+        % se cache do sink estiver vazia então/no active tasks, larger
+        % interval - vai diminuindo (exploratory interest)
+        if ~ismember(sinks(ss), sinkCache)
+            % instancia interesse
+            fprintf('\n\n\nCreating interest\n');
+            sinkCache = [sinkCache ss];
+        end
+        % fimse
+    end
+    % fimpara
+% para o primeiro timestep cria todos os interesses
+else
+    % instancia um interesse para cada sink
+    for ss=1:length(sinks)
+        fprintf('\n\n\nCreating interest\n');
+        sinkCache = [sinkCache ss];
+    end
+end
+
+dlmwrite('interests/sinkCache.m',sinkCache);
 
 end
