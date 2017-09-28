@@ -499,7 +499,6 @@ end
 
 vehicleNodes = unique(communicationPairsV2I(:, 2))';
 broadcastInterests = [];
-%Receives sent
 
 for ii = 1:length(vehicleNodes)
     % Find all neighbors of the current vehicle
@@ -519,25 +518,39 @@ for ii = 1:length(vehicleNodes)
    
     
     % aadjust gradients and timestamp according to interval = ? por segundos
-    
+    %
     for kk = 1:size(broadcastInterests, 1)
-        interestID = broadcastInterests(kk, 2);
-        
+        interestID = bcastInterests(kk, 2);
+        %
         % Verify whether the interest is in cache or not
         % Further on change this block to compare type rect and speed only
-        
-        
+        %exists = 0;
+        %if (timestep == 1)
+        %    exists = 0;
+        %else
+        %    if ~isempty(cacheEntries)
+        %        for pp = 1:size(cacheEntries, 1)
+        %            if cacheEntries{pp, 1} == interestID && ...
+        %                    cacheEntries{pp, 2} == vehicleNodes(ii)
+        %               exists = pp;
+        %               fprintf('%d - %d\n', cacheEntries{pp, 1}, cacheEntries{pp, 2});
+        %               break
+        %            end
+        %        end
+        %    end
+        %end
+        %
         % Create entry for the new interest
-        %IF não existe
+        %if exists == 0
         %    cacheEntries = [cacheEntries; ...
         %        {interestID, vehicleNodes(ii), 1, timestep, ...
         %        interests(interestID).duration, ...
         %        interests(interestID).expiresAt, ...
-        %        [broadcastInterests(kk, 1) interests(interestID).interval]}
+        %        [bcastInterests(kk, 1) interests(interestID).interval]}
         %        ];
         %    fprintf('Entry %d created for node %d\n', interestID, vehicleNodes(ii));
         % Update timestamp, duration and gradients
-        %ELSE
+        %else
         %    IF ~gradient
         %        %add gradient
         %        %update timestamp
@@ -546,7 +559,7 @@ for ii = 1:length(vehicleNodes)
         %        %update timtestamp and duration
         %    END
         %    fprintf('Entry %d already exists for node %d\n', interestID, vehicleNodes(ii));
-        %END
+        %end
     end
     
     % maintain interests
