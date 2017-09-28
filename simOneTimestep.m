@@ -5,7 +5,8 @@ function[V2XDataTimestep]...
     MaxNLOSbRange,MaxNLOSvRange,antennaHeight,polarization,vehReflRelPerm,...
     buildingReflRelPerm,freq,txPower,antennaGain,...
     PLENLOSb,smallScale,minDensityRange,NLOSvModelType,addNLOSvLoss,verbose,...
-    useReflDiffr,commPairArray,commPairArrayV2I,vehicleMidpoints,V2XNames)
+    useReflDiffr,commPairArray,commPairArrayV2I,vehicleMidpoints,V2XNames, ...
+    timestep)
 % SIMONETIMESTEP Executes one simulation timestep. 
 %   Builds vehicle, buildings, and foliage R-tree
 %   Generates random communication pairs (if not provided)
@@ -34,7 +35,10 @@ function[V2XDataTimestep]...
 %   objectCellsVehicles:cell containing outline of all vehicles
 %
 % Copyright (c) 2014-2015, Mate Boban
-
+fprintf('*********************************************************\n');
+fprintf('Time-step: %i\n', timestep);
+fprintf('*********************************************************\n');
+    
 ticForTimestep=tic;
 % Speed of light (m/s) constant
 c = 299792458;
@@ -444,60 +448,126 @@ if strcmpi(V2XNames{ii},'v2i')
 end
 end
 
+
+
+
+
+
+
+
 %% Directed Diffusion
 % https://sarwiki.informatik.hu-berlin.de/Directed_Diffusion
 
+load('interests/interests', 'interests');
+load('interests/radarEntries', 'radarEntries');
+load('interests/cacheEntries', 'cacheEntries');
 
-% COMO SABER O TIMESTEP ATUAL?
+%% Send interest
 
-% todos os nós de veículos participantes da comunicaão naquele timestep
-RxNodes = unique(communicationPairs(:, 2));
-% todos os nós das RSUs participantes da comunicação naquele timestep
-sinks = unique(communicationPairs(:, 1));
+% Instantiate interests
+if timestep == 1
+    interest01 = struct('type', 'vehicle', 'interval', 0.010, ...
+        'rect', [], 'timestamp', timestep, 'duration', 10, ...
+        'expiresAt', 10, 'speed', 13);
+    interest02 = struct('type', 'vehicle', 'interval', 0.100, ...
+        'rect', [], 'timestamp', timestep, 'duration', 15, ...
+        'expiresAt', 15, 'speed', 10);
+    interest03 = struct('type', 'vehicle', 'interval', 0.001, ...
+        'rect', [], 'timestamp', timestep, 'duration', 8, ...
+        'expiresAt', 8, 'speed', 15);
+    interest04 = struct('type', 'vehicle', 'interval', 0.100, ...
+        'rect', [], 'timestamp', timestep, 'duration', 12, ...
+        'expiresAt', 12, 'speed', 12);
+    interests = [interest01 interest02 interest03 interest04];
+    % Create relationships between sinks and interests
+    % [nodeID, interestID]
+    radarEntries = [1 1; 2 2; 1 3; 1 4];
+end
 
-% arquivo para guardar todos interesses dos veiculos [ID_VEH, ID_INTEREST]
-vehCache = dlmread('interests/vehCache.m');
-% arquivo para guardar todos interesses gerados pelas RSUs [ID_VEH, ID_RSU]
-sinkCache = dlmread('interests/sinkCache.m');
-% arquivo para guardar pares de atributos dos interesses
-% struct com velocidade definida no arquivo de RSU, e timestamp, duracao, intervalo, 
-% rect, type, etc.
-interests = dlmread('interests/interests.m');
-
-% para cada RxNodes
-    % se interesse na cache que combina com seus pares de comunicação
-        % copia/traz interesse para cache do veiculo
-
-if ~isempty(sinkCache)
-    % para cada interesse na cache de RSU
-        % se expiresAt > timestep então
-            % remove interesse
-        % senao
-            % refresh/timestamp = timestep
-        % fimse
-    % fimpara
-    
-    % para cada sink
-    for ss=1:length(sinks)
-        % se cache do sink estiver vazia então/no active tasks, larger
-        % interval - vai diminuindo (exploratory interest)
-        if ~ismember(sinks(ss), sinkCache)
-            % instancia interesse
-            fprintf('\n\n\nCreating interest\n');
-            sinkCache = [sinkCache ss];
-        end
-        % fimse
-    end
-    % fimpara
-% para o primeiro timestep cria todos os interesses
-else
-    % instancia um interesse para cada sink
-    for ss=1:length(sinks)
-        fprintf('\n\n\nCreating interest\n');
-        sinkCache = [sinkCache ss];
+for ii = 1:length(interests)
+    % Update entry's timestamp
+    interests(ii).timestamp = timestep;
+    % Update expiration for all expired entries
+    if interests(ii).expiresAt < timestep
+        interests(ii).expiresAt = interests(ii).expiresAt + ...
+            interests(ii).duration;
     end
 end
 
-dlmwrite('interests/sinkCache.m',sinkCache);
+
+%% Receive interest
+
+vehicleNodes = unique(communicationPairsV2I(:, 2))';
+
+for ii = 1:length(vehicleNodes)
+    % Find all neighbors of the current vehicle
+    neighborsIdx = communicationPairsV2I(:, 2) == vehicleNodes(ii);
+    neighbors = communicationPairsV2I(neighborsIdx, 1)';
+    
+    % Pull down all interests sent by the neighbors
+    bcastInterests = [];
+    for jj = 1:length(neighbors)
+        fprintf('\n\nVeh %d received from neighbor %d\n\n\n', ...
+            vehicleNodes(ii), neighbors(jj));
+        bcastEntriesIdx = radarEntries(:, 1) == neighbors(jj);
+        bcastEntries = radarEntries(bcastEntriesIdx, :);
+        bcastInterests = [bcastInterests; bcastEntries];
+    end
+    
+    % magnitude
+    % cacheEntries = [cacheEntries struct('interestID', interestID, ...
+    % 'nodeType' = 'I', 'timestamp', '', 'duration', '', 'expiresAt', '', ...
+    % 'gradients', [])];
+    
+    
+    for kk = 1:size(bcastInterests, 1)
+        interestID = bcastInterests(kk, 2);
+        
+        % Verify whether the interest is in cache or not
+        % Further on change this block to compare type rect and speed only
+        exists = 0;
+        if (isempty(cacheEntries) || timestep == 1)
+            cachedEntries = []
+        else            
+            cachedEntries = find(cacheEntries{:, 1} == interestID);
+            for oo = 1:size(cachedEntries, 1)
+                if cachedEntries{oo, 2} == vehicleNodes(ii)
+                    exists = oo;
+                    break
+                end
+            end
+        end
+        
+        % Create entry for the new interest
+        if ~(exists == 0)
+        %    cacheEntries = [cacheEntries; ...
+        %        {interestID, vehicleNodes(ii), 1, timestep, ...
+        %        interests(interestID).duration, ...
+        %        interests(interestID).expiresAt, ...
+        %        [bcastInterests(kk, 1) interests(interestID).interval]}];
+            fprintf('\nEntry %d created for node %d\n', interestID, vehicleNodes(ii));
+        % Update timestamp, duration and gradients
+        else
+        %    IF ~gradient
+        %        %add gradient
+        %        %update timestamp
+        %        %update duration
+        %    ELSE
+        %        %update timtestamp and duration
+        %    END
+            fprintf('\nEntry %d already exists for node %d\n', interestID, vehicleNodes(ii));
+        end
+    end
+    
+    % maintain all interests
+end
+
+cacheEntries = [{0 0 0 0 0 0 [0 0 0 0]}];
+save('interests/cacheEntries', 'cacheEntries');
+save('interests/radarEntries', 'radarEntries');
+save('interests/interests', 'interests');
+
+
+
 
 end

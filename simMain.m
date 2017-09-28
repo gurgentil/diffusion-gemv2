@@ -126,6 +126,7 @@ for kk = 1:numTimesteps
             1:vehicleRowCounter/numRowsPerVehicle+numVehiclesPerTimestep(kk),:);
         vehicleRowCounter = vehicleRowCounter+size(currVehicles,1);
     end
+    
     % Simulate current timestep
     [V2XDataTimestep]...
         = simOneTimestep(numCommPairs,numCommPairsV2I,currVehicles,...
@@ -136,7 +137,7 @@ for kk = 1:numTimesteps
         vehReflRelPerm,buildingReflRelPerm,freq,txPower,antennaGain,...
         PLENLOSb,smallScale,minDensityRange,NLOSvModelType,addNLOSvLoss,...
         verbose,useReflDiffr,commPairArray,commPairArrayV2I,...
-        currVehicleMidpoints,V2XNames);
+        currVehicleMidpoints,V2XNames, kk);
     
     for ii=1:length(V2XNames)
         % Store the simulation results from current timestep in cells
@@ -185,8 +186,5 @@ for kk = 1:numTimesteps
             V2XData.(V2XNames{ii}) = [];
         end
     end
-    fprintf('*********************************************************\n');
-    fprintf('Time-step: %i\n',kk);
-    fprintf('*********************************************************\n');
 end
 end
