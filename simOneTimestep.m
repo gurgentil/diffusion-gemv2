@@ -473,8 +473,8 @@ if timestep == 1
         'rect', [], 'timestamp', timestep, 'duration', 15, ...
         'expiresAt', 15, 'speed', 10);
     interest03 = struct('type', 'vehicle', 'interval', 0.001, ...
-        'rect', [], 'timestamp', timestep, 'duration', 8, ...
-        'expiresAt', 8, 'speed', 15);
+        'rect', [], 'timestamp', timestep, 'duration', 3, ...
+        'expiresAt', 3, 'speed', 20);
     interest04 = struct('type', 'vehicle', 'interval', 0.100, ...
         'rect', [], 'timestamp', timestep, 'duration', 12, ...
         'expiresAt', 12, 'speed', 12);
@@ -484,6 +484,7 @@ if timestep == 1
     radarEntries = [1 1; 2 2; 1 3; 1 4];
 end
 
+%clearIdx = [];
 for ii = 1:length(interests)
     % Update entry's timestamp
     interests(ii).timestamp = timestep;
@@ -491,15 +492,16 @@ for ii = 1:length(interests)
     if interests(ii).expiresAt < timestep
         interests(ii).expiresAt = interests(ii).expiresAt + ...
             interests(ii).duration;
+    %    clearIdx = [clearIdx ii];
     end
 end
+%interests(clearIdx) = [];
 
 
 %% Receive interest
 
 vehicleNodes = unique(communicationPairsV2I(:, 2))';
 broadcastInterests = [];
-%Receives sent
 
 for ii = 1:length(vehicleNodes)
     % Find all neighbors of the current vehicle
@@ -509,7 +511,7 @@ for ii = 1:length(vehicleNodes)
     % Pull down all interests sent by the neighbors
     fprintf('\n');
     for jj = 1:length(neighbors)
-        fprintf('V %d received from I %d\n', ...
+        fprintf('Vehicle %d received from RSU %d\n', ...
             vehicleNodes(ii), neighbors(jj));
         entriesIdx = radarEntries(:, 1) == neighbors(jj);
         broadcastInterests = [broadcastInterests; ...
@@ -517,39 +519,96 @@ for ii = 1:length(vehicleNodes)
     end
     fprintf('\n');
    
+    % Unset 'cacheEntries' variable when the simulation starts
+    if timestep == 1
+        cacheEntries = [];
+    end
     
-    % aadjust gradients and timestamp according to interval = ? por segundos
+    % Adjust gradients and timestamp according to interval = ? por segundos
     
     for kk = 1:size(broadcastInterests, 1)
         interestID = broadcastInterests(kk, 2);
-        
         % Verify whether the interest is in cache or not
         % Further on change this block to compare type rect and speed only
+        exists = 0;
+        if ~isempty(cacheEntries)
+            for qq = 1:size(cacheEntries, 1)
+                if cacheEntries{qq, 1} == interestID && ...
+                        cacheEntries{qq, 2} == vehicleNodes(ii)
+                    exists = qq;
+                    break
+                end
+            end
+        end
         
+        % If entry does not exist, create one
+        % [interestID, nodeID, nodeType: 0 - RSU or 1 - vehicle,
+        % lastReceivedTimestamp, duration, expiresAt, 
+        % gradients: previousHop rate]
+        if exists == 0
+            fprintf('Entry %d created for node %d\n', ...
+                broadcastInterests(kk, 2), vehicleNodes(ii));
+            cacheEntries = [cacheEntries; ...
+                {interestID, vehicleNodes(ii), 1, timestep, ...
+                interests(interestID).duration, ...
+                interests(interestID).expiresAt, ...
+                [broadcastInterests(kk, 1) interests(interestID).interval]}];
+        % If entry exists
+        else
+            fprintf('Entry %d already exists for node %d\n', ...
+                broadcastInterests(kk, 2), vehicleNodes(ii));
+            
+            % Check whether gradient has been set
+            isGradientSet = 0;
+            for gg = 1:size(cacheEntries{exists, 7}, 1)
+                % If gradient is set, update duration and rate
+                if cacheEntries{exists,7}(gg, 1) == broadcastInterests(kk, 1)
+                    % Further on increase rate
+                    cacheEntries{exists, 7}(gg, 2) = ...
+                        cacheEntries{exists, 7}(gg, 2);
+                    isGradientSet = 1;
+                    break
+                end
+            end
+            
+            % Add gradient
+            if isGradientSet == 0
+                cacheEntries{exists, 7} = [cacheEntries{exists, 7}; ...
+                    broadcastInterests(kk, 1) interests(interestID).interval];
+            end
+            
+            % Update entry's timestamp according to the last interest
+            % received
+            cacheEntries{exists, 6} = timestep;
+        end
         
-        % Create entry for the new interest
-        %IF não existe
-        %    cacheEntries = [cacheEntries; ...
-        %        {interestID, vehicleNodes(ii), 1, timestep, ...
-        %        interests(interestID).duration, ...
-        %        interests(interestID).expiresAt, ...
-        %        [broadcastInterests(kk, 1) interests(interestID).interval]}
-        %        ];
-        %    fprintf('Entry %d created for node %d\n', interestID, vehicleNodes(ii));
-        % Update timestamp, duration and gradients
-        %ELSE
-        %    IF ~gradient
-        %        %add gradient
-        %        %update timestamp
-        %        %update duration
-        %    ELSE
-        %        %update timtestamp and duration
-        %    END
-        %    fprintf('Entry %d already exists for node %d\n', interestID, vehicleNodes(ii));
-        %END
     end
     
-    % maintain interests
+    
+    
+    % Remove expired entries
+    % Further on change to associate expiresAt with each gradient
+    %fprintf('\nStarting cache maintainance...\n');
+    %toBeRemovedIdx = [];
+    %for qq = 1:size(cacheEntries, 1)
+    %    if interests(cacheEntries{qq, 1}).expiresAt < timestep
+    %        fprintf('\nInterest %d removed for node %d at timestep %d', cacheEntries{qq, 1}, cacheEntries{qq, 2}, timestep);
+    %        toBeRemovedIdx = [toBeRemovedIdx qq];
+    %    end
+    %end
+    %fprintf('\n');
+    %cacheEntries(toBeRemovedIdx, :) = [];
+    
+    % Send data to RSU
+    % para cada veiculo
+        %para cada entrada na cache
+            %velocidade = veiculo(velocidade)
+            %while (n times according to interval/rate)
+                %dataCache <- velocidade
+                %[veiculo_id, velocidade, timestamp]
+            %endwhile
+        %endpara
+    % endpara
 end
 
 save('interests/cacheEntries', 'cacheEntries');
