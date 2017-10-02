@@ -478,15 +478,11 @@ if timestep == 1
     interest04 = struct('type', 'vehicle', 'interval', 0.100, ...
         'rect', [], 'timestamp', timestep, 'duration', 12, ...
         'expiresAt', 12, 'speed', 12);
+    
     interests = [interest01 interest02 interest03 interest04];
     % Create relationships between sinks and interests
     % [nodeID, interestID]
     radarEntries = [1 1; 2 2; 1 3; 1 4];
-elseif timestep == 10
-        
-elseif timestep == 15
-
-elseif
 end
 
 %clearIdx = [];
