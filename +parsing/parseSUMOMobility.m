@@ -32,7 +32,7 @@ numTimesteps = size(SUMOMobilityFile.fcd_dash_export.timestep,2);
 numVehiclesPerTimestep = zeros(numTimesteps,1);
 
 % Preallocate vehicles rows (e.g., 1000 per timestep).
-vehiclesArray = ones(numTimesteps*1000,5)*Inf;
+vehiclesArray = ones(numTimesteps*1000,6)*Inf;
 currvehiclesArrayIndex = 1;
 % In case of a single time-step, SUMOMobilityFile.fcd_dash_export.timestep
 % variable is not a cell, but a struct; in this case, convert it to cell
@@ -92,7 +92,11 @@ for ii=1:numTimesteps
         % Get the bearing, convert it to radians
         vehiclesArray(currvehiclesArrayIndex,5) = polygonManipulation.deg2rad...
             (str2double(SUMOMobilityFile.fcd_dash_export.timestep...
-            {ii}.vehicle{jj}.Attributes.angle)-correctionAngle);    
+            {ii}.vehicle{jj}.Attributes.angle)-correctionAngle);
+        % Get the speed
+        vehiclesArray(currvehiclesArrayIndex, 6) = str2double(...
+            SUMOMobilityFile.fcd_dash_export.timestep{ii}.vehicle...
+            {jj}.Attributes.speed);
         % Increase counter
         currvehiclesArrayIndex=currvehiclesArrayIndex+1;
         end

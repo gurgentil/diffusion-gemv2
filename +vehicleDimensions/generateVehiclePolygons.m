@@ -4,7 +4,7 @@ function[vehiclePolygons] = ...
 %
 % Input:
 %   vehicleRows:                    
-%   - vehicleRows:              array with five columns containing the
+%   - vehicleRows:              array with six columns containing the
 %                               following vehicle information: 
 %                                   -  Col 1: vehicle ID
 %                                   -  Col 2 and 3: X and Y (or Lat and
@@ -17,6 +17,7 @@ function[vehiclePolygons] = ...
 %                                   -  Col 5: bearing (angle in radians
 %                                   starting from abscissa and going
 %                                   counterclockwise)
+%                                   - GUSTAVO: Col 6: speed
 %   vehDimensionParams:         parameters for generating vehicle
 %                               dimensions (height, width, length)
 %
@@ -49,7 +50,6 @@ bearing = vehicleRows(:,5);
 if length(uniqueVehicles)<length(vehicleRows(:,1))    
     % Some vehicle IDs repeat across timesteps. Assign same dimensions to
     % same vehicle over differenttimesteps.
-    
     % Randomly generate widths and lengths for cars and trucks
     widths = zeros(size(uniqueVehicles));
     widths(vehicleRows(uniqueVehiclesIndex,4)==0) = ...

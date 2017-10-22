@@ -5,8 +5,8 @@ function[V2XDataTimestep]...
     MaxNLOSbRange,MaxNLOSvRange,antennaHeight,polarization,vehReflRelPerm,...
     buildingReflRelPerm,freq,txPower,antennaGain,...
     PLENLOSb,smallScale,minDensityRange,NLOSvModelType,addNLOSvLoss,verbose,...
-    useReflDiffr,commPairArray,commPairArrayV2I,vehicleMidpoints,V2XNames, ...
-    timestep)
+    useReflDiffr,commPairArray,commPairArrayV2I,vehicleMidpoints,...
+    V2XNames,timestep)
 % SIMONETIMESTEP Executes one simulation timestep. 
 %   Builds vehicle, buildings, and foliage R-tree
 %   Generates random communication pairs (if not provided)
@@ -35,10 +35,11 @@ function[V2XDataTimestep]...
 %   objectCellsVehicles:cell containing outline of all vehicles
 %
 % Copyright (c) 2014-2015, Mate Boban
-fprintf('*********************************************************\n');
-fprintf('Time-step: %i\n', timestep);
-fprintf('*********************************************************\n');
-    
+
+fprintf('\n\n***********************************************');
+fprintf('\nTime-step: %i\n', timestep);
+fprintf('***********************************************\n');
+
 ticForTimestep=tic;
 % Speed of light (m/s) constant
 c = 299792458;
@@ -48,7 +49,6 @@ c = 299792458;
 
 % NB: in comments, the term "link" and "communication pair" are used
 % interchangeably 
- 
 %% Generate and select communication pairs (if not provided)
 if isempty(commPairArray) && isempty(commPairArrayV2I)
     % Get all communicating vehicle pairs within commRange
@@ -453,181 +453,118 @@ end
 
 
 
+%% DIRECTED DIFFUSION
 
+%% Load simData
+load('simData/interests', 'interests');
+load('simData/gradients', 'gradients');
+load('simData/dataCache', 'dataCache');
 
-%% Directed Diffusion
-% https://sarwiki.informatik.hu-berlin.de/Directed_Diffusion
-
-load('interests/interests', 'interests');
-load('interests/radarEntries', 'radarEntries');
-load('interests/cacheEntries', 'cacheEntries');
-
-%% Send interest
-
-fprintf('\n\n');
-
-% Instantiate interests
+%% Initial setup
 if timestep == 1
-    nInterests = 3;
+    fprintf('\n');
+    % Empty simData variables
     interests = [];
-    radarEntries = [];
-    cacheEntries = [];
+    gradients = [];
+    dataCache = [];
+    % Total number of interests for the simulation
+    totalInterests = 5;
+    totalRSUs = size(RSUs, 1);
     
-    for ii = 1:nInterests
-        % Select random duration and speed for interest
-        duration = randi([5 10], 1, 1);
-        speed = randi([8 13], 1, 1);
-        % Interest: {createdAt, duration, speed, rect}
-        newInterest = {timestep, duration, speed, []};
-        % Make task active for the current interest
+    % Instantiate all interests
+    for ii = 1:totalInterests
+        newInterest = struct();
+        newInterest.duration = randi([5 10], 1, 1);
+        newInterest.maxSpeed = randi([4 9], 1, 1) * 10;
+        newInterest.sinkID = randi([1 totalRSUs], 1, 1);
         interests = [interests; newInterest];
-        % Associate interest to a sink: [radarID, interestID, isActive]
-        radarID = randi([1 size(RSUs, 1)], 1, 1);
-        radarEntries = [radarEntries; [radarID, size(interests, 1), 1]];
-        fprintf('++ Created entry %d {expiration: %d, speed: %d} for radar %d\n', ...
-            size(interests, 1), (newInterest{1} + newInterest{2}), ...
-            newInterest{3}, radarID);
+        fprintf(['Interest %d:\n\t[duration %d - maxSpeed %d - ' ...
+            'sinkID %d]\n'], size(interests, 1), newInterest.duration, ...
+            newInterest.maxSpeed, newInterest.sinkID);
     end
+    fprintf('\n');
 end
 
-for ii = 1:size(radarEntries, 1)
-    % If task is active
-    if radarEntries(ii, 3)
-        interestID = radarEntries(ii, 2);
-        currEntry = interests(interestID, :);
-        % If cratedAt plus duration (= expiresAt) is smaller than timestep
-        if (currEntry{1} + currEntry{2}) < timestep
-            fprintf('-- Entry %d has expired in radar %d\n', ...
-                interestID, radarEntries(ii, 1));
-            % Copy interest as new entry
-            newInterest = {timestep, currEntry{2}, currEntry{3}, ...
-                currEntry{4}};
-            interests = [interests; newInterest];
-            radarEntries = [radarEntries; ...
-                [radarEntries(ii, 1), size(interests, 1), 1]];
-            fprintf('++ Created entry %d {expiration: %d, speed: %d} for radar %d\n', ...
-                size(interests, 1), (newInterest{1} + newInterest{2}), ...
-                newInterest{3},radarEntries(ii, 1));
-            % Make task inactive
-            radarEntries(ii, 3) = 0;
-        end
+%% Maintain gradients
+% Find expired gradients
+gradientsToBeRemoved = [];
+for ii = 1:size(gradients, 1)
+    if gradients(ii, 4) < timestep
+        gradientsToBeRemoved = [gradientsToBeRemoved ii];
+        fprintf('Gradient %d from %d to %d has expired\n', ...
+            gradients(ii, 1), gradients(ii, 2), gradients(ii, 3));
     end
 end
+% Remove expired gradients
+gradients(gradientsToBeRemoved, :) = [];
 
-
-%% Receive interest
-
-vehNodes = unique(communicationPairsV2I(:, 2))';
-activeREntries = radarEntries(radarEntries(:, 3) == 1, :);
-
-for ii = 1:length(vehNodes)
-    % Find neighbors of the vehicle
-    neighborsLogic = communicationPairs(:, 2) == vehNodes(ii);
-    neighbors = communicationPairs(neighborsLogic)';
-    fprintf('Vehicle %d communicates with RSUs: %s\n', vehNodes(ii), ...
-        mat2str(neighbors));
-    
-    % Pull down interests received from the neighbors
-    bInterests = [];
-    for jj = 1:length(neighbors)
-        bInterestsLogic = activeREntries(:, 1) == neighbors(jj);
-        bInterests = [bInterests; activeREntries(bInterestsLogic, :)];
-    end
-    
-    % Cache received interests
-    for jj = 1:size(bInterests, 1)
-        interestID = bInterests(jj, 2);
-        % Check whether the interest has been cached or not
-        exists = 0;
-        for kk = 1:size(cacheEntries, 1)
-            if cacheEntries{kk, 1} == interestID && ...
-                    cacheEntries{kk, 2} == vehNodes(ii)
-                exists = kk;
-                break
-            end
-        end
-        
-        % If entry does not exist, create one
-        % {interestID, nodeID, nodeType: 0(RSU) or 1(Veh), lastReceivedAt,
-        % gradients: [nodeID-1 rate-1 expiresAt-1; ...; nodeID-n rate-n 
-        % expiresAt-n]}
-        if exists == 0
-            fprintf('\tCache entry %d created for node %d\n', ...
-                bInterests(jj, 2), vehNodes(ii));
-            cacheEntries = [cacheEntries; ...
-                {interestID, vehNodes(ii), 1, timestep, ...
-                [bInterests(jj, 1), 1, ...
-                (interests{interestID, 1} + interests{interestID, 2})]}];
-            fprintf('\t\t*%d has gradients: %s\n', interestID, ...
-                mat2str(cacheEntries{size(cacheEntries, 1), 5}));
-        else
-            gradients = cacheEntries{exists, 5};
-            gradientFound = 0;
-            
-            for kk = 1:size(gradients, 1)
-                % If gradient has expired, unset gradient
-                if gradients(kk, 3) < timestep ...
-                        && gradients(kk, 1) ~= bInterests(jj, 1)
-                    gradients(kk, :) = [];
-                % If gradient has expired but received new entry
-                elseif gradients(kk, 1) == bInterests(jj, 1)
-                    % Update rate and expiration for the gradient
-                    gradients(kk, 2) = gradients(kk, 2) * 1;
-                    gradients(kk, 3) = (interests{interestID, 1} + ...
-                        interests{interestID, 2});
-                    gradientFound = 1;
-                end
-            end
-            
-            if ~gradientFound
-                gradients = [gradients; ...
-                    {interestID, vehNodes(ii), 1, timestep, ...
-                    [bInterests(jj, 1), 1, ...
-                    (interests{interestID, 1} + interests{interestID, 2})]}];
-            end
-
-            % Reasigns the gradients to the cacheEntries
-            cacheEntries{exists, 5} = gradients;
-            fprintf('\t*%d has gradients: %s\n', interestID, ...
-                mat2str(cacheEntries{exists, 5}));
-        end
-        
-    end
-    
-    % Remove entries with no gradients
-    toBeRemoved = [];
-    for jj = 1:size(cacheEntries, 1)
-       if isempty(cacheEntries{jj, 5})
-           toBeRemoved = [toBeRemoved jj];
-           fprintf('\n-- Removing entry %d from cache: no gradient associated', ...
-               cacheEntries{jj, 1});           
-       end
-    end
-    cacheEntries(toBeRemoved, :) = [];
-    
-    % Send data messages checking on the gradients
-    
-    %speed = getSpeed()
-    %FOREACH cache entry for this vehicle
-        %FOREACH gradient
-            %LOOP WHILE (n times according to interval/rate)
-                %dataCache <- speed:
-                    %[vehicle_id, speed, timestamp]
-            %ENDWHILE
-        %ENDFOREACH
-    %ENDFOREACH
-end
-
-%% Receive data and send it to cache
-
-
-
-%% Save workspace variables
-
-save('interests/cacheEntries', 'cacheEntries');
-save('interests/radarEntries', 'radarEntries');
-save('interests/interests', 'interests');
-
+%% Broadcast interests
 fprintf('\n');
+for ii = 1:size(communicationPairsV2I, 1)
+    % Get all interests sent through that comm. link
+    recInterests = [];
+    for jj = 1:size(interests, 1)
+        if interests(jj, 1).sinkID == communicationPairsV2I(ii, 1)
+            recInterests = [recInterests jj];
+        end
+    end
+    fprintf('\nVehicle %d received interests %s from RSU %d\n', ...
+        communicationPairsV2I(ii, 2), mat2str(recInterests), ...
+        communicationPairsV2I(ii, 1));
+    
+	for jj = 1:length(recInterests)
+        % Find the index of the interest entry/gradient if it exists
+        exEntriesLgc = [];
+        exEntries = [];
+        if ~isempty(gradients)
+            exEntriesLgc = gradients(:, 1) == recInterests(jj) ...
+                & gradients(:, 2) == communicationPairsV2I(ii, 2) ...
+                & gradients(:, 3) == communicationPairsV2I(ii, 1);
+            exEntries = gradients(exEntriesLgc, :);
+            fprintf('Entries: %s\n', mat2str(exEntries));
+        end
+        
+        % No matching interest entry/gradient found
+        if sum(exEntriesLgc) == 0
+			% Create a single gradient towards the neighbor
+            % (interestID nodeID neighborID expiresAt) 
+            gradients = [gradients; ...
+                [recInterests(jj), communicationPairs(ii, 2), ...
+                communicationPairs(ii, 1), ...
+                timestep + interests(recInterests(jj),1).duration]];
+        else
+            % Update expiration
+            gradients(exEntriesLgc, 4) = timestep + ...
+                interests(recInterests(jj), 1).duration;
+            fprintf('Updating expiration time.\n');
+        end
+    end
+end
+fprintf('\n');
+
+% Check speed
+numVehiclesOverSpeedLimit = 0;
+for ii = 1:size(gradients, 1)
+    speed = randi([30 120], 1, 1);
+    maxSpeed = interests(gradients(ii, 1), 1).maxSpeed;
+    vehID = gradients(ii, 2);
+    RSUID = gradients(ii, 3);
+    % Add new entry to the data cache of the respective RSU
+    % (RSUID, vehicleID, speed, timestep, vehLat, vehLon)
+	if speed > maxSpeed
+        numVehiclesOverSpeedLimit = numVehiclesOverSpeedLimit + 1;
+        newEntry = [RSUID, vehID, maxSpeed, speed, timestep, ...
+            vehicles(vehID, 2), vehicles(vehID, 3)];
+        dataCache = [dataCache; newEntry];
+        fprintf('New data entry:\n\t%s\n', mat2str(newEntry));
+    end
+end
+fprintf('%d out of %d vehicles are over the limit\n\n', ...
+    numVehiclesOverSpeedLimit, size(gradients, 1));
+
+%% Save simData
+save('simData/interests', 'interests');
+save('simData/gradients', 'gradients');
+save('simData/dataCache', 'dataCache');
 
 end

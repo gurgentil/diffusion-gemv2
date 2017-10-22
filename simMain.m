@@ -126,7 +126,6 @@ for kk = 1:numTimesteps
             1:vehicleRowCounter/numRowsPerVehicle+numVehiclesPerTimestep(kk),:);
         vehicleRowCounter = vehicleRowCounter+size(currVehicles,1);
     end
-    
     % Simulate current timestep
     [V2XDataTimestep]...
         = simOneTimestep(numCommPairs,numCommPairsV2I,currVehicles,...

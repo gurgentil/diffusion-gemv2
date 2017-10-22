@@ -71,13 +71,17 @@ else
 end
 
 %% Generate vehicle outlines and set their height
-if size(vehicles,2)==3 || size(vehicles,2)==5
+if size(vehicles,2)==3 || size(vehicles,2)==6
     % Simulation needs the Lat/Long coordinates for Google Earth Visualization
     vehiclesLatLon = vehicles;
+ %   velox = vehicles(:,6);
     % Convert Lat/Long coordinates to UTM
     [xxV,yyV,zzV] = externalCode.deg2utm.deg2utm(vehicles(:,2),vehicles(:,3));
+    
     vehicles(:,2) = yyV;
+ %   vehicles(:,6) = velox;
     vehicles(:,3) = xxV;
+    
     if size(vehicles,2)==3
         % The supplied file contains vehicle outlines
         vehicleMidpointsLatLon = vehicleDimensions.getVehicleMidpoint...
@@ -85,17 +89,20 @@ if size(vehicles,2)==3 || size(vehicles,2)==5
         vehicleMidpoints = vehicleDimensions.getVehicleMidpoint...
             (vehicles,numRowsPerVehicle,verbose);
     else
+        
         vehicleMidpointsLatLon = vehiclesLatLon(:,[2 3]);
-        vehicleMidpoints = [yyV,xxV];
+        vehicleMidpoints = [yyV,xxV]; 
+        %% ATE AQUI OK
         % The supplied file contains vehicle midpoints, vehicle type, and
         % bearing. Generate vehicle polygons.
         vehicles = vehicleDimensions.generateVehiclePolygons(vehicles,...
             vehDimensionParams,verbose);
+        %% ATE AQUI NOK
         % Convert newly created points to Lat/Lon (for Google Earth Visualization)
         [LatV,LonV] = externalCode.utm2deg.utm2deg(vehicles(:,3),...
         vehicles(:,2),repmat(zzV(1,:),length(vehicles),1));
-        vehiclesLatLon = [vehicles(:,1),LatV,LonV];               
-    end    
+        vehiclesLatLon = [vehicles(:,1),LatV,LonV];           
+    end
     % Set the height of the vehicles.
     vehiclesHeight = vehicleDimensions.getVehicleHeight(vehicles,...
         numRowsPerVehicle,vehDimensionParams,lengthThreshold,verbose);   
